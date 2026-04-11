@@ -1,0 +1,7350 @@
+[
+  {
+    "name": "Admiralty Primary School",
+    "addr": "10 Woodlands Drive 62",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4407,
+    "lng": 103.8013,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.72,
+    "p2c_ratio": 0.85,
+    "pv": false,
+    "hist": [
+      0.65,
+      0.78,
+      0.85
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.5,
+      "2022": 0.59,
+      "2023": 0.65,
+      "2024": 0.78,
+      "2025": 0.85
+    },
+    "hist2b": {
+      "2019": 0.5,
+      "2020": 0.53,
+      "2021": 0.54,
+      "2022": 0.63,
+      "2023": 0.66,
+      "2024": 0.69,
+      "2025": 0.72
+    }
+  },
+  {
+    "name": "Ai Tong School",
+    "addr": "10 Ang Mo Kio Street 21",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3691,
+    "lng": 103.8517,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.12,
+    "p2c_ratio": 1.85,
+    "pv": false,
+    "hist": [
+      1.2,
+      1.5,
+      1.85
+    ],
+    "ccas": [
+      "Chess",
+      "Choir",
+      "Chinese Orchestra"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.84,
+      "2020": 0.88,
+      "2021": 0.92,
+      "2022": 1.08,
+      "2023": 1.2,
+      "2024": 1.5,
+      "2025": 1.85
+    },
+    "hist2b": {
+      "2019": 0.78,
+      "2020": 0.82,
+      "2021": 0.85,
+      "2022": 0.99,
+      "2023": 1.03,
+      "2024": 1.08,
+      "2025": 1.12
+    }
+  },
+  {
+    "name": "Alexandra Primary School",
+    "addr": "1 Alexandra Road",
+    "zone": "South",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.2891,
+    "lng": 103.8013,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.8,
+    "p2c_ratio": 0.95,
+    "pv": false,
+    "hist": [
+      0.72,
+      0.88,
+      0.95
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.5,
+      "2020": 0.53,
+      "2021": 0.55,
+      "2022": 0.65,
+      "2023": 0.72,
+      "2024": 0.88,
+      "2025": 0.95
+    },
+    "hist2b": {
+      "2019": 0.56,
+      "2020": 0.59,
+      "2021": 0.6,
+      "2022": 0.7,
+      "2023": 0.74,
+      "2024": 0.77,
+      "2025": 0.8
+    }
+  },
+  {
+    "name": "Anglo-Chinese School (Junior)",
+    "addr": "129 Hillside Drive",
+    "zone": "East",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3214,
+    "lng": 103.8794,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 3.15,
+    "p2c_ratio": 4.2,
+    "pv": true,
+    "hist": [
+      3.1,
+      3.8,
+      4.2
+    ],
+    "ccas": [
+      "Rugby",
+      "Band",
+      "Scouts"
+    ],
+    "vibe": {
+      "academic": 8.0,
+      "homework": 7.5,
+      "parentComp": 8.0,
+      "teacherQ": 8.0,
+      "culture": 7.5,
+      "overall": 7.8
+    },
+    "hist2c": {
+      "2019": 2.17,
+      "2020": 2.28,
+      "2021": 2.39,
+      "2022": 2.79,
+      "2023": 3.1,
+      "2024": 3.8,
+      "2025": 4.2
+    },
+    "hist2b": {
+      "2019": 2.2,
+      "2020": 2.32,
+      "2021": 2.38,
+      "2022": 2.77,
+      "2023": 2.9,
+      "2024": 3.02,
+      "2025": 3.15
+    }
+  },
+  {
+    "name": "Ang Mo Kio Primary School",
+    "addr": "20 Ang Mo Kio Avenue 10",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3698,
+    "lng": 103.8462,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.68,
+    "p2c_ratio": 0.82,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.74,
+      0.82
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.74,
+      "2025": 0.82
+    },
+    "hist2b": {
+      "2019": 0.48,
+      "2020": 0.5,
+      "2021": 0.51,
+      "2022": 0.6,
+      "2023": 0.63,
+      "2024": 0.65,
+      "2025": 0.68
+    }
+  },
+  {
+    "name": "Balestier Hill Primary School",
+    "addr": "25 Buckley Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3241,
+    "lng": 103.8412,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.61,
+    "p2c_ratio": 0.74,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.74
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.74
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.56,
+      "2024": 0.59,
+      "2025": 0.61
+    }
+  },
+  {
+    "name": "Beacon Primary School",
+    "addr": "100 Compassvale Bow",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3931,
+    "lng": 103.9012,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.7,
+      0.78
+    ],
+    "ccas": [
+      "Choir",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.7,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Bedok Green Primary School",
+    "addr": "10 Bedok North Avenue 4",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3341,
+    "lng": 103.9312,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.7,
+    "p2c_ratio": 0.84,
+    "pv": false,
+    "hist": [
+      0.62,
+      0.76,
+      0.84
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.62,
+      "2024": 0.76,
+      "2025": 0.84
+    },
+    "hist2b": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.64,
+      "2024": 0.67,
+      "2025": 0.7
+    }
+  },
+  {
+    "name": "Bendemeer Primary School",
+    "addr": "1 Bendemeer Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3141,
+    "lng": 103.8612,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.58,
+    "p2c_ratio": 0.71,
+    "pv": false,
+    "hist": [
+      0.5,
+      0.64,
+      0.71
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.35,
+      "2020": 0.37,
+      "2021": 0.39,
+      "2022": 0.45,
+      "2023": 0.5,
+      "2024": 0.64,
+      "2025": 0.71
+    },
+    "hist2b": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.53,
+      "2024": 0.56,
+      "2025": 0.58
+    }
+  },
+  {
+    "name": "Blangah Rise Primary School",
+    "addr": "2 Telok Blangah Crescent",
+    "zone": "South",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.2741,
+    "lng": 103.8091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.55,
+    "p2c_ratio": 0.68,
+    "pv": false,
+    "hist": [
+      0.48,
+      0.61,
+      0.68
+    ],
+    "ccas": [
+      "Dance",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.34,
+      "2020": 0.35,
+      "2021": 0.37,
+      "2022": 0.43,
+      "2023": 0.48,
+      "2024": 0.61,
+      "2025": 0.68
+    },
+    "hist2b": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.48,
+      "2023": 0.51,
+      "2024": 0.53,
+      "2025": 0.55
+    }
+  },
+  {
+    "name": "Boon Lay Garden Primary School",
+    "addr": "20 Boon Lay Drive",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3441,
+    "lng": 103.7091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Bukit Panjang Primary School",
+    "addr": "10 Bukit Panjang Ring Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3791,
+    "lng": 103.7641,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.71,
+    "p2c_ratio": 0.86,
+    "pv": false,
+    "hist": [
+      0.63,
+      0.77,
+      0.86
+    ],
+    "ccas": [
+      "Football",
+      "Art Club",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.63,
+      "2024": 0.77,
+      "2025": 0.86
+    },
+    "hist2b": {
+      "2019": 0.5,
+      "2020": 0.52,
+      "2021": 0.54,
+      "2022": 0.62,
+      "2023": 0.65,
+      "2024": 0.68,
+      "2025": 0.71
+    }
+  },
+  {
+    "name": "Bukit Timah Primary School",
+    "addr": "2 Bukit Timah Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3356,
+    "lng": 103.8026,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.8,
+    "p2c_ratio": 0.9,
+    "pv": false,
+    "hist": [
+      0.7,
+      0.85,
+      0.9
+    ],
+    "ccas": [
+      "Art Club",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.54,
+      "2022": 0.63,
+      "2023": 0.7,
+      "2024": 0.85,
+      "2025": 0.9
+    },
+    "hist2b": {
+      "2019": 0.56,
+      "2020": 0.59,
+      "2021": 0.6,
+      "2022": 0.7,
+      "2023": 0.74,
+      "2024": 0.77,
+      "2025": 0.8
+    }
+  },
+  {
+    "name": "Bukit View Primary School",
+    "addr": "10 Bukit Batok West Avenue 8",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3591,
+    "lng": 103.7541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.67,
+    "p2c_ratio": 0.81,
+    "pv": false,
+    "hist": [
+      0.59,
+      0.73,
+      0.81
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.81
+    },
+    "hist2b": {
+      "2019": 0.47,
+      "2020": 0.49,
+      "2021": 0.51,
+      "2022": 0.59,
+      "2023": 0.62,
+      "2024": 0.64,
+      "2025": 0.67
+    }
+  },
+  {
+    "name": "Cantonment Primary School",
+    "addr": "1 Cantonment Road",
+    "zone": "South",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.2785,
+    "lng": 103.8453,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.5,
+      0.65,
+      0.75
+    ],
+    "ccas": [
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.35,
+      "2020": 0.37,
+      "2021": 0.39,
+      "2022": 0.45,
+      "2023": 0.5,
+      "2024": 0.65,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "Catholic High School (Primary)",
+    "addr": "9 Bishan Street 22",
+    "zone": "North",
+    "gender": "Boys",
+    "types": [
+      "SAP",
+      "Affiliated"
+    ],
+    "lat": 1.3521,
+    "lng": 103.8437,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 2.9,
+    "p2c_ratio": 3.5,
+    "pv": true,
+    "hist": [
+      2.5,
+      3.1,
+      3.5
+    ],
+    "ccas": [
+      "Wushu",
+      "Debate",
+      "Band"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 8.5,
+      "teacherQ": 8.0,
+      "culture": 7.0,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.75,
+      "2020": 1.84,
+      "2021": 1.93,
+      "2022": 2.25,
+      "2023": 2.5,
+      "2024": 3.1,
+      "2025": 3.5
+    },
+    "hist2b": {
+      "2019": 2.03,
+      "2020": 2.13,
+      "2021": 2.19,
+      "2022": 2.55,
+      "2023": 2.67,
+      "2024": 2.78,
+      "2025": 2.9
+    }
+  },
+  {
+    "name": "Cedar Primary School",
+    "addr": "10 Compassvale Drive",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3921,
+    "lng": 103.8912,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.66,
+    "p2c_ratio": 0.79,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.72,
+      0.79
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.72,
+      "2025": 0.79
+    },
+    "hist2b": {
+      "2019": 0.46,
+      "2020": 0.49,
+      "2021": 0.5,
+      "2022": 0.58,
+      "2023": 0.61,
+      "2024": 0.63,
+      "2025": 0.66
+    }
+  },
+  {
+    "name": "CHIJ (Katong) Primary",
+    "addr": "35 Siglap Road",
+    "zone": "East",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3091,
+    "lng": 103.9091,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.65,
+    "p2c_ratio": 2.4,
+    "pv": false,
+    "hist": [
+      1.45,
+      2.1,
+      2.4
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.01,
+      "2020": 1.07,
+      "2021": 1.12,
+      "2022": 1.3,
+      "2023": 1.45,
+      "2024": 2.1,
+      "2025": 2.4
+    },
+    "hist2b": {
+      "2019": 1.15,
+      "2020": 1.21,
+      "2021": 1.25,
+      "2022": 1.45,
+      "2023": 1.52,
+      "2024": 1.58,
+      "2025": 1.65
+    }
+  },
+  {
+    "name": "CHIJ (Kellock)",
+    "addr": "2 Holland Grove Road",
+    "zone": "West",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3141,
+    "lng": 103.7941,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.55,
+    "p2c_ratio": 2.2,
+    "pv": false,
+    "hist": [
+      1.35,
+      1.95,
+      2.2
+    ],
+    "ccas": [
+      "Choir",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 0.94,
+      "2020": 0.99,
+      "2021": 1.04,
+      "2022": 1.22,
+      "2023": 1.35,
+      "2024": 1.95,
+      "2025": 2.2
+    },
+    "hist2b": {
+      "2019": 1.08,
+      "2020": 1.14,
+      "2021": 1.17,
+      "2022": 1.36,
+      "2023": 1.43,
+      "2024": 1.49,
+      "2025": 1.55
+    }
+  },
+  {
+    "name": "CHIJ Our Lady of Good Counsel",
+    "addr": "10 Yishun Avenue 9",
+    "zone": "North",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.4291,
+    "lng": 103.8391,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.1,
+    "p2c_ratio": 1.65,
+    "pv": false,
+    "hist": [
+      0.95,
+      1.4,
+      1.65
+    ],
+    "ccas": [
+      "Choir",
+      "Drama",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.66,
+      "2020": 0.7,
+      "2021": 0.73,
+      "2022": 0.85,
+      "2023": 0.95,
+      "2024": 1.4,
+      "2025": 1.65
+    },
+    "hist2b": {
+      "2019": 0.77,
+      "2020": 0.81,
+      "2021": 0.83,
+      "2022": 0.97,
+      "2023": 1.01,
+      "2024": 1.06,
+      "2025": 1.1
+    }
+  },
+  {
+    "name": "CHIJ Our Lady of the Nativity",
+    "addr": "15 Ang Mo Kio Avenue 4",
+    "zone": "North",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3791,
+    "lng": 103.8491,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.05,
+    "p2c_ratio": 1.55,
+    "pv": false,
+    "hist": [
+      0.9,
+      1.3,
+      1.55
+    ],
+    "ccas": [
+      "Choir",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.63,
+      "2020": 0.66,
+      "2021": 0.69,
+      "2022": 0.81,
+      "2023": 0.9,
+      "2024": 1.3,
+      "2025": 1.55
+    },
+    "hist2b": {
+      "2019": 0.73,
+      "2020": 0.77,
+      "2021": 0.79,
+      "2022": 0.92,
+      "2023": 0.97,
+      "2024": 1.01,
+      "2025": 1.05
+    }
+  },
+  {
+    "name": "CHIJ Our Lady Queen of Peace",
+    "addr": "2 Sunset Way",
+    "zone": "West",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3241,
+    "lng": 103.7741,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.7,
+    "p2c_ratio": 2.35,
+    "pv": false,
+    "hist": [
+      1.5,
+      2.05,
+      2.35
+    ],
+    "ccas": [
+      "Choir",
+      "Drama",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.05,
+      "2020": 1.1,
+      "2021": 1.15,
+      "2022": 1.35,
+      "2023": 1.5,
+      "2024": 2.05,
+      "2025": 2.35
+    },
+    "hist2b": {
+      "2019": 1.19,
+      "2020": 1.25,
+      "2021": 1.29,
+      "2022": 1.5,
+      "2023": 1.56,
+      "2024": 1.63,
+      "2025": 1.7
+    }
+  },
+  {
+    "name": "CHIJ Primary (Toa Payoh)",
+    "addr": "1 Lor 1A Toa Payoh",
+    "zone": "North",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3391,
+    "lng": 103.8491,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.8,
+    "p2c_ratio": 2.55,
+    "pv": false,
+    "hist": [
+      1.6,
+      2.2,
+      2.55
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.12,
+      "2020": 1.18,
+      "2021": 1.23,
+      "2022": 1.44,
+      "2023": 1.6,
+      "2024": 2.2,
+      "2025": 2.55
+    },
+    "hist2b": {
+      "2019": 1.26,
+      "2020": 1.32,
+      "2021": 1.36,
+      "2022": 1.58,
+      "2023": 1.66,
+      "2024": 1.73,
+      "2025": 1.8
+    }
+  },
+  {
+    "name": "CHIJ St. Nicholas Girls School (Primary)",
+    "addr": "2 Mattar Road",
+    "zone": "East",
+    "gender": "Girls",
+    "types": [
+      "SAP",
+      "Affiliated"
+    ],
+    "lat": 1.3341,
+    "lng": 103.8871,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 3.2,
+    "p2c_ratio": 3.8,
+    "pv": true,
+    "hist": [
+      2.9,
+      3.4,
+      3.8
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 8.0,
+      "homework": 7.5,
+      "parentComp": 8.0,
+      "teacherQ": 8.5,
+      "culture": 7.5,
+      "overall": 7.8
+    },
+    "hist2c": {
+      "2019": 2.03,
+      "2020": 2.13,
+      "2021": 2.23,
+      "2022": 2.61,
+      "2023": 2.9,
+      "2024": 3.4,
+      "2025": 3.8
+    },
+    "hist2b": {
+      "2019": 2.24,
+      "2020": 2.35,
+      "2021": 2.42,
+      "2022": 2.82,
+      "2023": 2.94,
+      "2024": 3.07,
+      "2025": 3.2
+    }
+  },
+  {
+    "name": "Chongfu School",
+    "addr": "10 Yishun Ring Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.4241,
+    "lng": 103.8341,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.05,
+    "p2c_ratio": 1.6,
+    "pv": false,
+    "hist": [
+      0.9,
+      1.35,
+      1.6
+    ],
+    "ccas": [
+      "Wushu",
+      "Choir",
+      "Chinese Orchestra"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.63,
+      "2020": 0.66,
+      "2021": 0.69,
+      "2022": 0.81,
+      "2023": 0.9,
+      "2024": 1.35,
+      "2025": 1.6
+    },
+    "hist2b": {
+      "2019": 0.73,
+      "2020": 0.77,
+      "2021": 0.79,
+      "2022": 0.92,
+      "2023": 0.97,
+      "2024": 1.01,
+      "2025": 1.05
+    }
+  },
+  {
+    "name": "Chongzheng Primary School",
+    "addr": "10 Bukit Batok Street 22",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3491,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.85,
+    "p2c_ratio": 1.05,
+    "pv": false,
+    "hist": [
+      0.75,
+      0.95,
+      1.05
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Choir",
+      "Wushu"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.52,
+      "2020": 0.55,
+      "2021": 0.58,
+      "2022": 0.68,
+      "2023": 0.75,
+      "2024": 0.95,
+      "2025": 1.05
+    },
+    "hist2b": {
+      "2019": 0.59,
+      "2020": 0.62,
+      "2021": 0.64,
+      "2022": 0.75,
+      "2023": 0.78,
+      "2024": 0.82,
+      "2025": 0.85
+    }
+  },
+  {
+    "name": "Clementi Primary School",
+    "addr": "5 West Coast Walk",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3091,
+    "lng": 103.7691,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.15,
+    "p2c_ratio": 1.75,
+    "pv": false,
+    "hist": [
+      1.0,
+      1.5,
+      1.75
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.7,
+      "2020": 0.73,
+      "2021": 0.77,
+      "2022": 0.9,
+      "2023": 1.0,
+      "2024": 1.5,
+      "2025": 1.75
+    },
+    "hist2b": {
+      "2019": 0.8,
+      "2020": 0.85,
+      "2021": 0.87,
+      "2022": 1.01,
+      "2023": 1.06,
+      "2024": 1.1,
+      "2025": 1.15
+    }
+  },
+  {
+    "name": "Compassvale Primary School",
+    "addr": "11 Sengkang West Avenue",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3918,
+    "lng": 103.8919,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.7,
+    "p2c_ratio": 0.8,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.75,
+      0.8
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.75,
+      "2025": 0.8
+    },
+    "hist2b": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.64,
+      "2024": 0.67,
+      "2025": 0.7
+    }
+  },
+  {
+    "name": "Concord Primary School",
+    "addr": "31 Teck Whye Avenue",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3791,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "Coral Primary School",
+    "addr": "10 Pasir Ris Drive 6",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3741,
+    "lng": 103.9491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.72,
+    "p2c_ratio": 0.87,
+    "pv": false,
+    "hist": [
+      0.64,
+      0.78,
+      0.87
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.49,
+      "2022": 0.58,
+      "2023": 0.64,
+      "2024": 0.78,
+      "2025": 0.87
+    },
+    "hist2b": {
+      "2019": 0.5,
+      "2020": 0.53,
+      "2021": 0.54,
+      "2022": 0.63,
+      "2023": 0.66,
+      "2024": 0.69,
+      "2025": 0.72
+    }
+  },
+  {
+    "name": "Corporation Primary School",
+    "addr": "21 Jurong West Street 81",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3541,
+    "lng": 103.7041,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.73,
+    "pv": false,
+    "hist": [
+      0.53,
+      0.66,
+      0.73
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.37,
+      "2020": 0.39,
+      "2021": 0.41,
+      "2022": 0.48,
+      "2023": 0.53,
+      "2024": 0.66,
+      "2025": 0.73
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "Damai Primary School",
+    "addr": "10 Pasir Ris Drive 4",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3691,
+    "lng": 103.9541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.68,
+    "p2c_ratio": 0.82,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.74,
+      0.82
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.74,
+      "2025": 0.82
+    },
+    "hist2b": {
+      "2019": 0.48,
+      "2020": 0.5,
+      "2021": 0.51,
+      "2022": 0.6,
+      "2023": 0.63,
+      "2024": 0.65,
+      "2025": 0.68
+    }
+  },
+  {
+    "name": "De La Salle School",
+    "addr": "200 Upper Thomson Road",
+    "zone": "North",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3591,
+    "lng": 103.8291,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.6,
+    "p2c_ratio": 2.3,
+    "pv": false,
+    "hist": [
+      1.4,
+      2.0,
+      2.3
+    ],
+    "ccas": [
+      "Football",
+      "Band",
+      "Scouts"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 0.98,
+      "2020": 1.03,
+      "2021": 1.08,
+      "2022": 1.26,
+      "2023": 1.4,
+      "2024": 2.0,
+      "2025": 2.3
+    },
+    "hist2b": {
+      "2019": 1.12,
+      "2020": 1.18,
+      "2021": 1.21,
+      "2022": 1.41,
+      "2023": 1.47,
+      "2024": 1.54,
+      "2025": 1.6
+    }
+  },
+  {
+    "name": "East Spring Primary School",
+    "addr": "2 Tampines Street 32",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3521,
+    "lng": 103.9389,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.8,
+    "p2c_ratio": 0.95,
+    "pv": false,
+    "hist": [
+      0.7,
+      0.85,
+      0.95
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.54,
+      "2022": 0.63,
+      "2023": 0.7,
+      "2024": 0.85,
+      "2025": 0.95
+    },
+    "hist2b": {
+      "2019": 0.56,
+      "2020": 0.59,
+      "2021": 0.6,
+      "2022": 0.7,
+      "2023": 0.74,
+      "2024": 0.77,
+      "2025": 0.8
+    }
+  },
+  {
+    "name": "Edgefield Primary School",
+    "addr": "10 Punggol Field",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4041,
+    "lng": 103.9091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Elias Park Primary School",
+    "addr": "51 Pasir Ris Drive 3",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3791,
+    "lng": 103.9541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.7,
+    "p2c_ratio": 0.84,
+    "pv": false,
+    "hist": [
+      0.62,
+      0.76,
+      0.84
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.62,
+      "2024": 0.76,
+      "2025": 0.84
+    },
+    "hist2b": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.64,
+      "2024": 0.67,
+      "2025": 0.7
+    }
+  },
+  {
+    "name": "Endeavour Primary School",
+    "addr": "11 Sembawang Crescent",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4391,
+    "lng": 103.8191,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "Fairfield Methodist School (Primary)",
+    "addr": "5 Methodist Hill",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.2952,
+    "lng": 103.7892,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.6,
+    "p2c_ratio": 2.3,
+    "pv": true,
+    "hist": [
+      1.8,
+      2.1,
+      2.3
+    ],
+    "ccas": [
+      "Swimming",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.26,
+      "2020": 1.32,
+      "2021": 1.39,
+      "2022": 1.62,
+      "2023": 1.8,
+      "2024": 2.1,
+      "2025": 2.3
+    },
+    "hist2b": {
+      "2019": 1.12,
+      "2020": 1.18,
+      "2021": 1.21,
+      "2022": 1.41,
+      "2023": 1.47,
+      "2024": 1.54,
+      "2025": 1.6
+    }
+  },
+  {
+    "name": "Farrer Park Primary School",
+    "addr": "1 Farrer Park Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3141,
+    "lng": 103.8541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Fengshan Primary School",
+    "addr": "11 Bedok North Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3291,
+    "lng": 103.9291,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.71,
+    "p2c_ratio": 0.86,
+    "pv": false,
+    "hist": [
+      0.63,
+      0.77,
+      0.86
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.63,
+      "2024": 0.77,
+      "2025": 0.86
+    },
+    "hist2b": {
+      "2019": 0.5,
+      "2020": 0.52,
+      "2021": 0.54,
+      "2022": 0.62,
+      "2023": 0.65,
+      "2024": 0.68,
+      "2025": 0.71
+    }
+  },
+  {
+    "name": "Fernvale Primary School",
+    "addr": "6 Fernvale Lane",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3941,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.67,
+    "p2c_ratio": 0.81,
+    "pv": false,
+    "hist": [
+      0.59,
+      0.73,
+      0.81
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.81
+    },
+    "hist2b": {
+      "2019": 0.47,
+      "2020": 0.49,
+      "2021": 0.51,
+      "2022": 0.59,
+      "2023": 0.62,
+      "2024": 0.64,
+      "2025": 0.67
+    }
+  },
+  {
+    "name": "First Toa Payoh Primary School",
+    "addr": "10 Toa Payoh Lorong 1A",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3341,
+    "lng": 103.8491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Frontier Primary School",
+    "addr": "5 Jurong West Street 51",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3491,
+    "lng": 103.7141,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.61,
+    "p2c_ratio": 0.74,
+    "pv": false,
+    "hist": [
+      0.54,
+      0.67,
+      0.74
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.38,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.49,
+      "2023": 0.54,
+      "2024": 0.67,
+      "2025": 0.74
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.56,
+      "2024": 0.59,
+      "2025": 0.61
+    }
+  },
+  {
+    "name": "Fuhua Primary School",
+    "addr": "250 Jurong East Street 24",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3441,
+    "lng": 103.7291,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Choir",
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Gongshang Primary School",
+    "addr": "21 Pasir Ris Drive 6",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3691,
+    "lng": 103.9491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.68,
+    "p2c_ratio": 0.82,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.74,
+      0.82
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.74,
+      "2025": 0.82
+    },
+    "hist2b": {
+      "2019": 0.48,
+      "2020": 0.5,
+      "2021": 0.51,
+      "2022": 0.6,
+      "2023": 0.63,
+      "2024": 0.65,
+      "2025": 0.68
+    }
+  },
+  {
+    "name": "Greendale Primary School",
+    "addr": "10 Punggol Place",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4091,
+    "lng": 103.9041,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Greenridge Primary School",
+    "addr": "90 Choa Chu Kang Loop",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3841,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.66,
+    "p2c_ratio": 0.8,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.72,
+      0.8
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.72,
+      "2025": 0.8
+    },
+    "hist2b": {
+      "2019": 0.46,
+      "2020": 0.49,
+      "2021": 0.5,
+      "2022": 0.58,
+      "2023": 0.61,
+      "2024": 0.63,
+      "2025": 0.66
+    }
+  },
+  {
+    "name": "Greenwood Primary School",
+    "addr": "20 Woodlands Avenue 1",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4341,
+    "lng": 103.7891,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "Gubei Primary School",
+    "addr": "50 Jurong West Street 24",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3491,
+    "lng": 103.7191,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.72,
+    "p2c_ratio": 0.87,
+    "pv": false,
+    "hist": [
+      0.63,
+      0.78,
+      0.87
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.63,
+      "2024": 0.78,
+      "2025": 0.87
+    },
+    "hist2b": {
+      "2019": 0.5,
+      "2020": 0.53,
+      "2021": 0.54,
+      "2022": 0.63,
+      "2023": 0.66,
+      "2024": 0.69,
+      "2025": 0.72
+    }
+  },
+  {
+    "name": "Henry Park Primary School",
+    "addr": "1 Holland Close",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3107,
+    "lng": 103.7941,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 2.8,
+    "p2c_ratio": 5.1,
+    "pv": true,
+    "hist": [
+      3.5,
+      4.2,
+      5.1
+    ],
+    "ccas": [
+      "Football",
+      "Gymnastics",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.8,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 2.45,
+      "2020": 2.57,
+      "2021": 2.69,
+      "2022": 3.15,
+      "2023": 3.5,
+      "2024": 4.2,
+      "2025": 5.1
+    },
+    "hist2b": {
+      "2019": 1.96,
+      "2020": 2.06,
+      "2021": 2.12,
+      "2022": 2.46,
+      "2023": 2.58,
+      "2024": 2.69,
+      "2025": 2.8
+    }
+  },
+  {
+    "name": "Holy Innocents Primary School",
+    "addr": "10 Upper Serangoon View",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3791,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.1,
+    "p2c_ratio": 1.65,
+    "pv": false,
+    "hist": [
+      0.95,
+      1.4,
+      1.65
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.66,
+      "2020": 0.7,
+      "2021": 0.73,
+      "2022": 0.85,
+      "2023": 0.95,
+      "2024": 1.4,
+      "2025": 1.65
+    },
+    "hist2b": {
+      "2019": 0.77,
+      "2020": 0.81,
+      "2021": 0.83,
+      "2022": 0.97,
+      "2023": 1.01,
+      "2024": 1.06,
+      "2025": 1.1
+    }
+  },
+  {
+    "name": "Hong Wen School",
+    "addr": "20 Macpherson Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3241,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.08,
+    "p2c_ratio": 1.62,
+    "pv": false,
+    "hist": [
+      0.93,
+      1.38,
+      1.62
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.65,
+      "2020": 0.68,
+      "2021": 0.72,
+      "2022": 0.84,
+      "2023": 0.93,
+      "2024": 1.38,
+      "2025": 1.62
+    },
+    "hist2b": {
+      "2019": 0.76,
+      "2020": 0.79,
+      "2021": 0.82,
+      "2022": 0.95,
+      "2023": 0.99,
+      "2024": 1.04,
+      "2025": 1.08
+    }
+  },
+  {
+    "name": "Hougang Primary School",
+    "addr": "10 Hougang Street 11",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3691,
+    "lng": 103.8891,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.69,
+    "p2c_ratio": 0.83,
+    "pv": false,
+    "hist": [
+      0.61,
+      0.75,
+      0.83
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.61,
+      "2024": 0.75,
+      "2025": 0.83
+    },
+    "hist2b": {
+      "2019": 0.48,
+      "2020": 0.51,
+      "2021": 0.52,
+      "2022": 0.61,
+      "2023": 0.63,
+      "2024": 0.66,
+      "2025": 0.69
+    }
+  },
+  {
+    "name": "Huamin Primary School",
+    "addr": "10 Bukit Panjang Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3791,
+    "lng": 103.7691,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.06,
+    "p2c_ratio": 1.58,
+    "pv": false,
+    "hist": [
+      0.91,
+      1.33,
+      1.58
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.64,
+      "2020": 0.67,
+      "2021": 0.7,
+      "2022": 0.82,
+      "2023": 0.91,
+      "2024": 1.33,
+      "2025": 1.58
+    },
+    "hist2b": {
+      "2019": 0.74,
+      "2020": 0.78,
+      "2021": 0.8,
+      "2022": 0.93,
+      "2023": 0.98,
+      "2024": 1.02,
+      "2025": 1.06
+    }
+  },
+  {
+    "name": "Junyuan Primary School",
+    "addr": "1 Pasir Ris Street 71",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3741,
+    "lng": 103.9641,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.67,
+    "p2c_ratio": 0.81,
+    "pv": false,
+    "hist": [
+      0.59,
+      0.73,
+      0.81
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.81
+    },
+    "hist2b": {
+      "2019": 0.47,
+      "2020": 0.49,
+      "2021": 0.51,
+      "2022": 0.59,
+      "2023": 0.62,
+      "2024": 0.64,
+      "2025": 0.67
+    }
+  },
+  {
+    "name": "Jurong Primary School",
+    "addr": "11 Jurong West Avenue 1",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3441,
+    "lng": 103.7091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.54,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.38,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.49,
+      "2023": 0.54,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Jurong West Primary School",
+    "addr": "11 Jurong West Street 81",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3541,
+    "lng": 103.7041,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.73,
+    "pv": false,
+    "hist": [
+      0.53,
+      0.66,
+      0.73
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.37,
+      "2020": 0.39,
+      "2021": 0.41,
+      "2022": 0.48,
+      "2023": 0.53,
+      "2024": 0.66,
+      "2025": 0.73
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "Keming Primary School",
+    "addr": "2 Jurong West Street 41",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "Autonomous"
+    ],
+    "lat": 1.3491,
+    "lng": 103.7234,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.9,
+    "p2c_ratio": 1.1,
+    "pv": false,
+    "hist": [
+      0.8,
+      1.0,
+      1.1
+    ],
+    "ccas": [
+      "Robotics",
+      "Art Club",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.0,
+      "homework": 5.5,
+      "parentComp": 5.0,
+      "teacherQ": 8.0,
+      "culture": 8.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 0.56,
+      "2020": 0.59,
+      "2021": 0.62,
+      "2022": 0.72,
+      "2023": 0.8,
+      "2024": 1.0,
+      "2025": 1.1
+    },
+    "hist2b": {
+      "2019": 0.63,
+      "2020": 0.66,
+      "2021": 0.68,
+      "2022": 0.79,
+      "2023": 0.83,
+      "2024": 0.86,
+      "2025": 0.9
+    }
+  },
+  {
+    "name": "Kong Hwa School",
+    "addr": "350 Guillemard Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3191,
+    "lng": 103.8891,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.09,
+    "p2c_ratio": 1.63,
+    "pv": false,
+    "hist": [
+      0.94,
+      1.39,
+      1.63
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.66,
+      "2020": 0.69,
+      "2021": 0.72,
+      "2022": 0.85,
+      "2023": 0.94,
+      "2024": 1.39,
+      "2025": 1.63
+    },
+    "hist2b": {
+      "2019": 0.76,
+      "2020": 0.8,
+      "2021": 0.82,
+      "2022": 0.96,
+      "2023": 1.0,
+      "2024": 1.05,
+      "2025": 1.09
+    }
+  },
+  {
+    "name": "Kranji Primary School",
+    "addr": "10 Kranji Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4291,
+    "lng": 103.7591,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.58,
+    "p2c_ratio": 0.7,
+    "pv": false,
+    "hist": [
+      0.51,
+      0.64,
+      0.7
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.36,
+      "2020": 0.37,
+      "2021": 0.39,
+      "2022": 0.46,
+      "2023": 0.51,
+      "2024": 0.64,
+      "2025": 0.7
+    },
+    "hist2b": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.53,
+      "2024": 0.56,
+      "2025": 0.58
+    }
+  },
+  {
+    "name": "Lakeside Primary School",
+    "addr": "20 Jurong West Street 61",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3441,
+    "lng": 103.7141,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Lianhua Primary School",
+    "addr": "10 Bukit Batok West Avenue 6",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3591,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.04,
+    "p2c_ratio": 1.56,
+    "pv": false,
+    "hist": [
+      0.89,
+      1.31,
+      1.56
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.62,
+      "2020": 0.65,
+      "2021": 0.69,
+      "2022": 0.8,
+      "2023": 0.89,
+      "2024": 1.31,
+      "2025": 1.56
+    },
+    "hist2b": {
+      "2019": 0.73,
+      "2020": 0.76,
+      "2021": 0.79,
+      "2022": 0.92,
+      "2023": 0.96,
+      "2024": 1.0,
+      "2025": 1.04
+    }
+  },
+  {
+    "name": "MacPherson Primary School",
+    "addr": "10 Macpherson Lane",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3241,
+    "lng": 103.8841,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Maha Bodhi School",
+    "addr": "12 Kambing Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3491,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.59,
+    "p2c_ratio": 0.72,
+    "pv": false,
+    "hist": [
+      0.52,
+      0.65,
+      0.72
+    ],
+    "ccas": [
+      "Drama",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.36,
+      "2020": 0.38,
+      "2021": 0.4,
+      "2022": 0.47,
+      "2023": 0.52,
+      "2024": 0.65,
+      "2025": 0.72
+    },
+    "hist2b": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.54,
+      "2024": 0.57,
+      "2025": 0.59
+    }
+  },
+  {
+    "name": "Maris Stella High School (Primary)",
+    "addr": "16 Maris Stella Avenue",
+    "zone": "East",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.339,
+    "lng": 103.8679,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.7,
+    "p2c_ratio": 2.6,
+    "pv": true,
+    "hist": [
+      1.9,
+      2.3,
+      2.6
+    ],
+    "ccas": [
+      "Football",
+      "Scouts",
+      "Band"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.33,
+      "2020": 1.4,
+      "2021": 1.46,
+      "2022": 1.71,
+      "2023": 1.9,
+      "2024": 2.3,
+      "2025": 2.6
+    },
+    "hist2b": {
+      "2019": 1.19,
+      "2020": 1.25,
+      "2021": 1.29,
+      "2022": 1.5,
+      "2023": 1.56,
+      "2024": 1.63,
+      "2025": 1.7
+    }
+  },
+  {
+    "name": "Marymount Convent School",
+    "addr": "10 Marymount Road",
+    "zone": "North",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3601,
+    "lng": 103.8234,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.8,
+    "p2c_ratio": 2.5,
+    "pv": false,
+    "hist": [
+      1.5,
+      2.1,
+      2.5
+    ],
+    "ccas": [
+      "Drama",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.05,
+      "2020": 1.1,
+      "2021": 1.15,
+      "2022": 1.35,
+      "2023": 1.5,
+      "2024": 2.1,
+      "2025": 2.5
+    },
+    "hist2b": {
+      "2019": 1.26,
+      "2020": 1.32,
+      "2021": 1.36,
+      "2022": 1.58,
+      "2023": 1.66,
+      "2024": 1.73,
+      "2025": 1.8
+    }
+  },
+  {
+    "name": "Methodist Girls School (Primary)",
+    "addr": "11 Blackmore Drive",
+    "zone": "West",
+    "gender": "Girls",
+    "types": [
+      "Autonomous",
+      "Affiliated"
+    ],
+    "lat": 1.3241,
+    "lng": 103.7841,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 2.5,
+    "p2c_ratio": 3.2,
+    "pv": true,
+    "hist": [
+      2.2,
+      2.8,
+      3.2
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 8.5,
+      "teacherQ": 8.5,
+      "culture": 7.0,
+      "overall": 7.8
+    },
+    "hist2c": {
+      "2019": 1.54,
+      "2020": 1.62,
+      "2021": 1.69,
+      "2022": 1.98,
+      "2023": 2.2,
+      "2024": 2.8,
+      "2025": 3.2
+    },
+    "hist2b": {
+      "2019": 1.75,
+      "2020": 1.84,
+      "2021": 1.89,
+      "2022": 2.2,
+      "2023": 2.3,
+      "2024": 2.4,
+      "2025": 2.5
+    }
+  },
+  {
+    "name": "Montfort Junior School",
+    "addr": "1 Jalan Novena Barat",
+    "zone": "North",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3291,
+    "lng": 103.8241,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.15,
+    "p2c_ratio": 1.7,
+    "pv": false,
+    "hist": [
+      1.0,
+      1.45,
+      1.7
+    ],
+    "ccas": [
+      "Football",
+      "Band",
+      "Scouts"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.7,
+      "2020": 0.73,
+      "2021": 0.77,
+      "2022": 0.9,
+      "2023": 1.0,
+      "2024": 1.45,
+      "2025": 1.7
+    },
+    "hist2b": {
+      "2019": 0.8,
+      "2020": 0.85,
+      "2021": 0.87,
+      "2022": 1.01,
+      "2023": 1.06,
+      "2024": 1.1,
+      "2025": 1.15
+    }
+  },
+  {
+    "name": "Nan Chiau Primary School",
+    "addr": "1 Nan Chiau Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3891,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.07,
+    "p2c_ratio": 1.61,
+    "pv": false,
+    "hist": [
+      0.92,
+      1.36,
+      1.61
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.64,
+      "2020": 0.68,
+      "2021": 0.71,
+      "2022": 0.83,
+      "2023": 0.92,
+      "2024": 1.36,
+      "2025": 1.61
+    },
+    "hist2b": {
+      "2019": 0.75,
+      "2020": 0.79,
+      "2021": 0.81,
+      "2022": 0.94,
+      "2023": 0.98,
+      "2024": 1.03,
+      "2025": 1.07
+    }
+  },
+  {
+    "name": "Nan Hua Primary School",
+    "addr": "2 Bukit Batok Street 52",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3557,
+    "lng": 103.7536,
+    "p2b": "Moderate",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.4,
+    "p2c_ratio": 1.7,
+    "pv": false,
+    "hist": [
+      1.1,
+      1.5,
+      1.7
+    ],
+    "ccas": [
+      "Wushu",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.77,
+      "2020": 0.81,
+      "2021": 0.85,
+      "2022": 0.99,
+      "2023": 1.1,
+      "2024": 1.5,
+      "2025": 1.7
+    },
+    "hist2b": {
+      "2019": 0.98,
+      "2020": 1.03,
+      "2021": 1.06,
+      "2022": 1.23,
+      "2023": 1.29,
+      "2024": 1.34,
+      "2025": 1.4
+    }
+  },
+  {
+    "name": "Nanyang Primary School",
+    "addr": "52 Kings Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP",
+      "Autonomous"
+    ],
+    "lat": 1.3278,
+    "lng": 103.8051,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 3.8,
+    "p2c_ratio": 4.9,
+    "pv": true,
+    "hist": [
+      3.2,
+      4.1,
+      4.9
+    ],
+    "ccas": [
+      "Badminton",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.8,
+      "homework": 8.2,
+      "parentComp": 9.2,
+      "teacherQ": 8.2,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 2.24,
+      "2020": 2.35,
+      "2021": 2.46,
+      "2022": 2.88,
+      "2023": 3.2,
+      "2024": 4.1,
+      "2025": 4.9
+    },
+    "hist2b": {
+      "2019": 2.66,
+      "2020": 2.79,
+      "2021": 2.87,
+      "2022": 3.34,
+      "2023": 3.5,
+      "2024": 3.65,
+      "2025": 3.8
+    }
+  },
+  {
+    "name": "Naval Base Primary School",
+    "addr": "60 Admiralty Road West",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4391,
+    "lng": 103.8091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.61,
+    "p2c_ratio": 0.74,
+    "pv": false,
+    "hist": [
+      0.54,
+      0.67,
+      0.74
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.38,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.49,
+      "2023": 0.54,
+      "2024": 0.67,
+      "2025": 0.74
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.56,
+      "2024": 0.59,
+      "2025": 0.61
+    }
+  },
+  {
+    "name": "New Town Primary School",
+    "addr": "300 Commonwealth Avenue",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3041,
+    "lng": 103.7991,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.12,
+    "p2c_ratio": 1.68,
+    "pv": false,
+    "hist": [
+      0.97,
+      1.43,
+      1.68
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.68,
+      "2020": 0.71,
+      "2021": 0.75,
+      "2022": 0.87,
+      "2023": 0.97,
+      "2024": 1.43,
+      "2025": 1.68
+    },
+    "hist2b": {
+      "2019": 0.78,
+      "2020": 0.82,
+      "2021": 0.85,
+      "2022": 0.99,
+      "2023": 1.03,
+      "2024": 1.08,
+      "2025": 1.12
+    }
+  },
+  {
+    "name": "Ngee Ann Primary School",
+    "addr": "10 Boon Lay Drive",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3434,
+    "lng": 103.7098,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.1,
+    "p2c_ratio": 1.5,
+    "pv": false,
+    "hist": [
+      0.9,
+      1.2,
+      1.5
+    ],
+    "ccas": [
+      "Art Club",
+      "Dance",
+      "Football"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.63,
+      "2020": 0.66,
+      "2021": 0.69,
+      "2022": 0.81,
+      "2023": 0.9,
+      "2024": 1.2,
+      "2025": 1.5
+    },
+    "hist2b": {
+      "2019": 0.77,
+      "2020": 0.81,
+      "2021": 0.83,
+      "2022": 0.97,
+      "2023": 1.01,
+      "2024": 1.06,
+      "2025": 1.1
+    }
+  },
+  {
+    "name": "North Spring Primary School",
+    "addr": "11 Anchorvale Street",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3941,
+    "lng": 103.8841,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "North Vista Primary School",
+    "addr": "1 Compassvale Street",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3961,
+    "lng": 103.8961,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Northland Primary School",
+    "addr": "1 Yishun Avenue 5",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4241,
+    "lng": 103.8291,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.73,
+    "pv": false,
+    "hist": [
+      0.53,
+      0.66,
+      0.73
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.37,
+      "2020": 0.39,
+      "2021": 0.41,
+      "2022": 0.48,
+      "2023": 0.53,
+      "2024": 0.66,
+      "2025": 0.73
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "Northoaks Primary School",
+    "addr": "11 Woodlands Avenue 5",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4341,
+    "lng": 103.7941,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.58,
+    "p2c_ratio": 0.7,
+    "pv": false,
+    "hist": [
+      0.51,
+      0.64,
+      0.7
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.36,
+      "2020": 0.37,
+      "2021": 0.39,
+      "2022": 0.46,
+      "2023": 0.51,
+      "2024": 0.64,
+      "2025": 0.7
+    },
+    "hist2b": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.53,
+      "2024": 0.56,
+      "2025": 0.58
+    }
+  },
+  {
+    "name": "Palm View Primary School",
+    "addr": "2 Choa Chu Kang Avenue 2",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3891,
+    "lng": 103.7441,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Pei Chun Public School",
+    "addr": "20 Ghim Moh Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3091,
+    "lng": 103.7891,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.75,
+    "p2c_ratio": 2.45,
+    "pv": false,
+    "hist": [
+      1.55,
+      2.15,
+      2.45
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.08,
+      "2020": 1.14,
+      "2021": 1.19,
+      "2022": 1.4,
+      "2023": 1.55,
+      "2024": 2.15,
+      "2025": 2.45
+    },
+    "hist2b": {
+      "2019": 1.22,
+      "2020": 1.29,
+      "2021": 1.32,
+      "2022": 1.54,
+      "2023": 1.61,
+      "2024": 1.68,
+      "2025": 1.75
+    }
+  },
+  {
+    "name": "Pei Hwa Presbyterian Primary School",
+    "addr": "2 Bukit Timah Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3401,
+    "lng": 103.7912,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.5,
+    "p2c_ratio": 2.2,
+    "pv": false,
+    "hist": [
+      1.3,
+      1.8,
+      2.2
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 0.91,
+      "2020": 0.96,
+      "2021": 1.0,
+      "2022": 1.17,
+      "2023": 1.3,
+      "2024": 1.8,
+      "2025": 2.2
+    },
+    "hist2b": {
+      "2019": 1.05,
+      "2020": 1.1,
+      "2021": 1.13,
+      "2022": 1.32,
+      "2023": 1.38,
+      "2024": 1.44,
+      "2025": 1.5
+    }
+  },
+  {
+    "name": "Pei Tong Primary School",
+    "addr": "30 Clementi Avenue 4",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3141,
+    "lng": 103.7641,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.08,
+    "p2c_ratio": 1.62,
+    "pv": false,
+    "hist": [
+      0.93,
+      1.38,
+      1.62
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.65,
+      "2020": 0.68,
+      "2021": 0.72,
+      "2022": 0.84,
+      "2023": 0.93,
+      "2024": 1.38,
+      "2025": 1.62
+    },
+    "hist2b": {
+      "2019": 0.76,
+      "2020": 0.79,
+      "2021": 0.82,
+      "2022": 0.95,
+      "2023": 0.99,
+      "2024": 1.04,
+      "2025": 1.08
+    }
+  },
+  {
+    "name": "Peiying Primary School",
+    "addr": "11 Yishun Avenue 11",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4291,
+    "lng": 103.8391,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Pioneer Primary School",
+    "addr": "31 Jurong West Street 24",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3491,
+    "lng": 103.7091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.73,
+    "pv": false,
+    "hist": [
+      0.53,
+      0.66,
+      0.73
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.37,
+      "2020": 0.39,
+      "2021": 0.41,
+      "2022": 0.48,
+      "2023": 0.53,
+      "2024": 0.66,
+      "2025": 0.73
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "Poi Ching School",
+    "addr": "1 Tampines Avenue 1",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3541,
+    "lng": 103.9391,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.11,
+    "p2c_ratio": 1.66,
+    "pv": false,
+    "hist": [
+      0.96,
+      1.41,
+      1.66
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.67,
+      "2020": 0.71,
+      "2021": 0.74,
+      "2022": 0.86,
+      "2023": 0.96,
+      "2024": 1.41,
+      "2025": 1.66
+    },
+    "hist2b": {
+      "2019": 0.78,
+      "2020": 0.82,
+      "2021": 0.84,
+      "2022": 0.98,
+      "2023": 1.02,
+      "2024": 1.07,
+      "2025": 1.11
+    }
+  },
+  {
+    "name": "Princess Elizabeth Primary School",
+    "addr": "50 Pasir Panjang Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.2891,
+    "lng": 103.7891,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.75,
+    "p2c_ratio": 0.91,
+    "pv": false,
+    "hist": [
+      0.67,
+      0.82,
+      0.91
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.47,
+      "2020": 0.49,
+      "2021": 0.52,
+      "2022": 0.6,
+      "2023": 0.67,
+      "2024": 0.82,
+      "2025": 0.91
+    },
+    "hist2b": {
+      "2019": 0.52,
+      "2020": 0.55,
+      "2021": 0.57,
+      "2022": 0.66,
+      "2023": 0.69,
+      "2024": 0.72,
+      "2025": 0.75
+    }
+  },
+  {
+    "name": "Punggol Cove Primary School",
+    "addr": "21 Punggol Field Walk",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4091,
+    "lng": 103.9141,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Punggol Green Primary School",
+    "addr": "31 Punggol Way",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4041,
+    "lng": 103.9091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "Punggol Primary School",
+    "addr": "1 Punggol Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4041,
+    "lng": 103.9041,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Art Club",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Punggol View Primary School",
+    "addr": "11 Punggol Drive",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4091,
+    "lng": 103.9091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Qifa Primary School",
+    "addr": "9 Jurong West Street 75",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3491,
+    "lng": 103.7041,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.61,
+    "p2c_ratio": 0.74,
+    "pv": false,
+    "hist": [
+      0.54,
+      0.67,
+      0.74
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.38,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.49,
+      "2023": 0.54,
+      "2024": 0.67,
+      "2025": 0.74
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.56,
+      "2024": 0.59,
+      "2025": 0.61
+    }
+  },
+  {
+    "name": "Qihua Primary School",
+    "addr": "10 Woodlands Drive 14",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.4391,
+    "lng": 103.7941,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.74,
+    "p2c_ratio": 0.89,
+    "pv": false,
+    "hist": [
+      0.66,
+      0.8,
+      0.89
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.46,
+      "2020": 0.49,
+      "2021": 0.51,
+      "2022": 0.59,
+      "2023": 0.66,
+      "2024": 0.8,
+      "2025": 0.89
+    },
+    "hist2b": {
+      "2019": 0.52,
+      "2020": 0.54,
+      "2021": 0.56,
+      "2022": 0.65,
+      "2023": 0.68,
+      "2024": 0.71,
+      "2025": 0.74
+    }
+  },
+  {
+    "name": "Queenstown Primary School",
+    "addr": "1 Queensway",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.2991,
+    "lng": 103.8041,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.14,
+    "p2c_ratio": 1.72,
+    "pv": false,
+    "hist": [
+      0.99,
+      1.47,
+      1.72
+    ],
+    "ccas": [
+      "Football",
+      "Drama",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.69,
+      "2020": 0.73,
+      "2021": 0.76,
+      "2022": 0.89,
+      "2023": 0.99,
+      "2024": 1.47,
+      "2025": 1.72
+    },
+    "hist2b": {
+      "2019": 0.8,
+      "2020": 0.84,
+      "2021": 0.86,
+      "2022": 1.0,
+      "2023": 1.05,
+      "2024": 1.09,
+      "2025": 1.14
+    }
+  },
+  {
+    "name": "Raffles Girls Primary School",
+    "addr": "21 Hillcrest Road",
+    "zone": "West",
+    "gender": "Girls",
+    "types": [
+      "GEP",
+      "Autonomous"
+    ],
+    "lat": 1.3423,
+    "lng": 103.8039,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 4.1,
+    "p2c_ratio": 5.8,
+    "pv": true,
+    "hist": [
+      4.0,
+      5.2,
+      5.8
+    ],
+    "ccas": [
+      "Debate",
+      "Choir",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 9.0,
+      "homework": 8.5,
+      "parentComp": 9.5,
+      "teacherQ": 8.5,
+      "culture": 6.0,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 2.8,
+      "2020": 2.94,
+      "2021": 3.08,
+      "2022": 3.6,
+      "2023": 4.0,
+      "2024": 5.2,
+      "2025": 5.8
+    },
+    "hist2b": {
+      "2019": 2.87,
+      "2020": 3.01,
+      "2021": 3.1,
+      "2022": 3.61,
+      "2023": 3.77,
+      "2024": 3.94,
+      "2025": 4.1
+    }
+  },
+  {
+    "name": "Red Swastika School",
+    "addr": "11 Bedok North Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3298,
+    "lng": 103.9278,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.7,
+    "p2c_ratio": 0.9,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.8,
+      0.9
+    ],
+    "ccas": [
+      "Art Club",
+      "Football"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.8,
+      "2025": 0.9
+    },
+    "hist2b": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.64,
+      "2024": 0.67,
+      "2025": 0.7
+    }
+  },
+  {
+    "name": "Rivervale Primary School",
+    "addr": "11 Rivervale Crescent",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3941,
+    "lng": 103.8941,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Rosyth School",
+    "addr": "21 Serangoon North Avenue 4",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "Autonomous"
+    ],
+    "lat": 1.3741,
+    "lng": 103.8741,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.85,
+    "p2c_ratio": 2.6,
+    "pv": true,
+    "hist": [
+      1.65,
+      2.25,
+      2.6
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Robotics"
+    ],
+    "vibe": {
+      "academic": 7.5,
+      "homework": 7.0,
+      "parentComp": 7.5,
+      "teacherQ": 8.0,
+      "culture": 7.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.15,
+      "2020": 1.21,
+      "2021": 1.27,
+      "2022": 1.48,
+      "2023": 1.65,
+      "2024": 2.25,
+      "2025": 2.6
+    },
+    "hist2b": {
+      "2019": 1.29,
+      "2020": 1.36,
+      "2021": 1.4,
+      "2022": 1.63,
+      "2023": 1.7,
+      "2024": 1.78,
+      "2025": 1.85
+    }
+  },
+  {
+    "name": "Rulang Primary School",
+    "addr": "5 Jurong East Street 32",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3452,
+    "lng": 103.7312,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.05,
+    "p2c_ratio": 1.6,
+    "pv": false,
+    "hist": [
+      0.9,
+      1.3,
+      1.6
+    ],
+    "ccas": [
+      "Choir",
+      "Football"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.63,
+      "2020": 0.66,
+      "2021": 0.69,
+      "2022": 0.81,
+      "2023": 0.9,
+      "2024": 1.3,
+      "2025": 1.6
+    },
+    "hist2b": {
+      "2019": 0.73,
+      "2020": 0.77,
+      "2021": 0.79,
+      "2022": 0.92,
+      "2023": 0.97,
+      "2024": 1.01,
+      "2025": 1.05
+    }
+  },
+  {
+    "name": "Sembawang Primary School",
+    "addr": "51 Sembawang Drive",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4491,
+    "lng": 103.8191,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.73,
+    "pv": false,
+    "hist": [
+      0.53,
+      0.66,
+      0.73
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.37,
+      "2020": 0.39,
+      "2021": 0.41,
+      "2022": 0.48,
+      "2023": 0.53,
+      "2024": 0.66,
+      "2025": 0.73
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "Sengkang Green Primary School",
+    "addr": "10 Anchorvale Drive",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3941,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Shuqun Primary School",
+    "addr": "1 Jurong East Street 32",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3441,
+    "lng": 103.7291,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.03,
+    "p2c_ratio": 1.54,
+    "pv": false,
+    "hist": [
+      0.88,
+      1.29,
+      1.54
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.62,
+      "2020": 0.65,
+      "2021": 0.68,
+      "2022": 0.79,
+      "2023": 0.88,
+      "2024": 1.29,
+      "2025": 1.54
+    },
+    "hist2b": {
+      "2019": 0.72,
+      "2020": 0.76,
+      "2021": 0.78,
+      "2022": 0.91,
+      "2023": 0.95,
+      "2024": 0.99,
+      "2025": 1.03
+    }
+  },
+  {
+    "name": "Si Ling Primary School",
+    "addr": "1 Woodlands Avenue 6",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4341,
+    "lng": 103.7891,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.61,
+    "p2c_ratio": 0.74,
+    "pv": false,
+    "hist": [
+      0.54,
+      0.67,
+      0.74
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.38,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.49,
+      "2023": 0.54,
+      "2024": 0.67,
+      "2025": 0.74
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.56,
+      "2024": 0.59,
+      "2025": 0.61
+    }
+  },
+  {
+    "name": "Siglap Primary School",
+    "addr": "10 Siglap Plain",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3141,
+    "lng": 103.9141,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.1,
+    "p2c_ratio": 1.65,
+    "pv": false,
+    "hist": [
+      0.95,
+      1.4,
+      1.65
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.66,
+      "2020": 0.7,
+      "2021": 0.73,
+      "2022": 0.85,
+      "2023": 0.95,
+      "2024": 1.4,
+      "2025": 1.65
+    },
+    "hist2b": {
+      "2019": 0.77,
+      "2020": 0.81,
+      "2021": 0.83,
+      "2022": 0.97,
+      "2023": 1.01,
+      "2024": 1.06,
+      "2025": 1.1
+    }
+  },
+  {
+    "name": "Singapore Chinese Girls School (Primary)",
+    "addr": "37 Emerald Hill Road",
+    "zone": "South",
+    "gender": "Girls",
+    "types": [
+      "SAP",
+      "Affiliated"
+    ],
+    "lat": 1.3041,
+    "lng": 103.8341,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 3.5,
+    "p2c_ratio": 4.5,
+    "pv": true,
+    "hist": [
+      3.1,
+      3.9,
+      4.5
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Chinese Orchestra"
+    ],
+    "vibe": {
+      "academic": 9.0,
+      "homework": 8.5,
+      "parentComp": 9.0,
+      "teacherQ": 8.5,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 2.17,
+      "2020": 2.28,
+      "2021": 2.39,
+      "2022": 2.79,
+      "2023": 3.1,
+      "2024": 3.9,
+      "2025": 4.5
+    },
+    "hist2b": {
+      "2019": 2.45,
+      "2020": 2.57,
+      "2021": 2.65,
+      "2022": 3.08,
+      "2023": 3.22,
+      "2024": 3.36,
+      "2025": 3.5
+    }
+  },
+  {
+    "name": "South View Primary School",
+    "addr": "10 Choa Chu Kang Avenue 2",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3841,
+    "lng": 103.7441,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Springdale Primary School",
+    "addr": "9 Choa Chu Kang Drive",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3891,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "St Andrews Junior School",
+    "addr": "1 Francis Thomas Drive",
+    "zone": "East",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3341,
+    "lng": 103.8841,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.65,
+    "p2c_ratio": 2.35,
+    "pv": false,
+    "hist": [
+      1.45,
+      2.05,
+      2.35
+    ],
+    "ccas": [
+      "Football",
+      "Band",
+      "Scouts"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.01,
+      "2020": 1.07,
+      "2021": 1.12,
+      "2022": 1.3,
+      "2023": 1.45,
+      "2024": 2.05,
+      "2025": 2.35
+    },
+    "hist2b": {
+      "2019": 1.15,
+      "2020": 1.21,
+      "2021": 1.25,
+      "2022": 1.45,
+      "2023": 1.52,
+      "2024": 1.58,
+      "2025": 1.65
+    }
+  },
+  {
+    "name": "St Anthonys Canossian Primary School",
+    "addr": "40 Bedok North Road",
+    "zone": "East",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3291,
+    "lng": 103.9241,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.6,
+    "p2c_ratio": 2.25,
+    "pv": false,
+    "hist": [
+      1.4,
+      1.95,
+      2.25
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 0.98,
+      "2020": 1.03,
+      "2021": 1.08,
+      "2022": 1.26,
+      "2023": 1.4,
+      "2024": 1.95,
+      "2025": 2.25
+    },
+    "hist2b": {
+      "2019": 1.12,
+      "2020": 1.18,
+      "2021": 1.21,
+      "2022": 1.41,
+      "2023": 1.47,
+      "2024": 1.54,
+      "2025": 1.6
+    }
+  },
+  {
+    "name": "St Anthonys Primary School",
+    "addr": "20 Woodlands Avenue 1",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.4391,
+    "lng": 103.7891,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.08,
+    "p2c_ratio": 1.62,
+    "pv": false,
+    "hist": [
+      0.93,
+      1.38,
+      1.62
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.65,
+      "2020": 0.68,
+      "2021": 0.72,
+      "2022": 0.84,
+      "2023": 0.93,
+      "2024": 1.38,
+      "2025": 1.62
+    },
+    "hist2b": {
+      "2019": 0.76,
+      "2020": 0.79,
+      "2021": 0.82,
+      "2022": 0.95,
+      "2023": 0.99,
+      "2024": 1.04,
+      "2025": 1.08
+    }
+  },
+  {
+    "name": "St Gabriels Primary School",
+    "addr": "60 Upper Bukit Timah Road",
+    "zone": "West",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3441,
+    "lng": 103.7741,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.55,
+    "p2c_ratio": 2.2,
+    "pv": false,
+    "hist": [
+      1.35,
+      1.9,
+      2.2
+    ],
+    "ccas": [
+      "Football",
+      "Band",
+      "Scouts"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 0.94,
+      "2020": 0.99,
+      "2021": 1.04,
+      "2022": 1.22,
+      "2023": 1.35,
+      "2024": 1.9,
+      "2025": 2.2
+    },
+    "hist2b": {
+      "2019": 1.08,
+      "2020": 1.14,
+      "2021": 1.17,
+      "2022": 1.36,
+      "2023": 1.43,
+      "2024": 1.49,
+      "2025": 1.55
+    }
+  },
+  {
+    "name": "St Hildas Primary School",
+    "addr": "2 Tampines Avenue 3",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3541,
+    "lng": 103.9441,
+    "p2b": "Moderate",
+    "p2c": "Competitive",
+    "p2b_ratio": 1.7,
+    "p2c_ratio": 2.4,
+    "pv": false,
+    "hist": [
+      1.5,
+      2.1,
+      2.4
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.05,
+      "2020": 1.1,
+      "2021": 1.15,
+      "2022": 1.35,
+      "2023": 1.5,
+      "2024": 2.1,
+      "2025": 2.4
+    },
+    "hist2b": {
+      "2019": 1.19,
+      "2020": 1.25,
+      "2021": 1.29,
+      "2022": 1.5,
+      "2023": 1.56,
+      "2024": 1.63,
+      "2025": 1.7
+    }
+  },
+  {
+    "name": "St Josephs Institution Junior",
+    "addr": "145 Malcolm Road",
+    "zone": "North",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3241,
+    "lng": 103.8441,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 2.6,
+    "p2c_ratio": 3.4,
+    "pv": true,
+    "hist": [
+      2.3,
+      2.9,
+      3.4
+    ],
+    "ccas": [
+      "Football",
+      "Band",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 9.0,
+      "teacherQ": 8.0,
+      "culture": 6.5,
+      "overall": 7.5
+    },
+    "hist2c": {
+      "2019": 1.61,
+      "2020": 1.69,
+      "2021": 1.77,
+      "2022": 2.07,
+      "2023": 2.3,
+      "2024": 2.9,
+      "2025": 3.4
+    },
+    "hist2b": {
+      "2019": 1.82,
+      "2020": 1.91,
+      "2021": 1.97,
+      "2022": 2.29,
+      "2023": 2.39,
+      "2024": 2.5,
+      "2025": 2.6
+    }
+  },
+  {
+    "name": "St Margarets Primary School",
+    "addr": "99 Hougang Avenue 3",
+    "zone": "North",
+    "gender": "Girls",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3741,
+    "lng": 103.8841,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.12,
+    "p2c_ratio": 1.68,
+    "pv": false,
+    "hist": [
+      0.97,
+      1.43,
+      1.68
+    ],
+    "ccas": [
+      "Choir",
+      "Dance",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.68,
+      "2020": 0.71,
+      "2021": 0.75,
+      "2022": 0.87,
+      "2023": 0.97,
+      "2024": 1.43,
+      "2025": 1.68
+    },
+    "hist2b": {
+      "2019": 0.78,
+      "2020": 0.82,
+      "2021": 0.85,
+      "2022": 0.99,
+      "2023": 1.03,
+      "2024": 1.08,
+      "2025": 1.12
+    }
+  },
+  {
+    "name": "St Stephens School",
+    "addr": "20 Marine Crescent",
+    "zone": "East",
+    "gender": "Boys",
+    "types": [
+      "Affiliated"
+    ],
+    "lat": 1.3041,
+    "lng": 103.9041,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.1,
+    "p2c_ratio": 1.65,
+    "pv": false,
+    "hist": [
+      0.95,
+      1.4,
+      1.65
+    ],
+    "ccas": [
+      "Football",
+      "Band",
+      "Scouts"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.66,
+      "2020": 0.7,
+      "2021": 0.73,
+      "2022": 0.85,
+      "2023": 0.95,
+      "2024": 1.4,
+      "2025": 1.65
+    },
+    "hist2b": {
+      "2019": 0.77,
+      "2020": 0.81,
+      "2021": 0.83,
+      "2022": 0.97,
+      "2023": 1.01,
+      "2024": 1.06,
+      "2025": 1.1
+    }
+  },
+  {
+    "name": "Stamford Primary School",
+    "addr": "1 Stamford Road",
+    "zone": "South",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.2941,
+    "lng": 103.8541,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.15,
+    "p2c_ratio": 1.72,
+    "pv": false,
+    "hist": [
+      1.0,
+      1.47,
+      1.72
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.7,
+      "2020": 0.73,
+      "2021": 0.77,
+      "2022": 0.9,
+      "2023": 1.0,
+      "2024": 1.47,
+      "2025": 1.72
+    },
+    "hist2b": {
+      "2019": 0.8,
+      "2020": 0.85,
+      "2021": 0.87,
+      "2022": 1.01,
+      "2023": 1.06,
+      "2024": 1.1,
+      "2025": 1.15
+    }
+  },
+  {
+    "name": "Tao Nan School",
+    "addr": "45 Marine Crescent",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "SAP",
+      "GEP"
+    ],
+    "lat": 1.3012,
+    "lng": 103.9141,
+    "p2b": "Competitive",
+    "p2c": "Competitive",
+    "p2b_ratio": 3.15,
+    "p2c_ratio": 1.8,
+    "pv": true,
+    "hist": [
+      2.8,
+      3.1,
+      1.8
+    ],
+    "ccas": [
+      "Chess",
+      "Wushu",
+      "Band"
+    ],
+    "vibe": {
+      "academic": 8.5,
+      "homework": 8.0,
+      "parentComp": 8.5,
+      "teacherQ": 8.5,
+      "culture": 7.0,
+      "overall": 7.8
+    },
+    "hist2c": {
+      "2019": 1.96,
+      "2020": 2.06,
+      "2021": 2.16,
+      "2022": 2.52,
+      "2023": 2.8,
+      "2024": 3.1,
+      "2025": 1.8
+    },
+    "hist2b": {
+      "2019": 2.2,
+      "2020": 2.32,
+      "2021": 2.38,
+      "2022": 2.77,
+      "2023": 2.9,
+      "2024": 3.02,
+      "2025": 3.15
+    }
+  },
+  {
+    "name": "Tampines North Primary School",
+    "addr": "5 Tampines Avenue 9",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3691,
+    "lng": 103.9491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "Tampines Primary School",
+    "addr": "1 Tampines Street 41",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3541,
+    "lng": 103.9491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.7,
+    "p2c_ratio": 0.84,
+    "pv": false,
+    "hist": [
+      0.62,
+      0.76,
+      0.84
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.62,
+      "2024": 0.76,
+      "2025": 0.84
+    },
+    "hist2b": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.64,
+      "2024": 0.67,
+      "2025": 0.7
+    }
+  },
+  {
+    "name": "Teck Ghee Primary School",
+    "addr": "20 Ang Mo Kio Avenue 9",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3741,
+    "lng": 103.8541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.67,
+    "p2c_ratio": 0.81,
+    "pv": false,
+    "hist": [
+      0.59,
+      0.73,
+      0.81
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.81
+    },
+    "hist2b": {
+      "2019": 0.47,
+      "2020": 0.49,
+      "2021": 0.51,
+      "2022": 0.59,
+      "2023": 0.62,
+      "2024": 0.64,
+      "2025": 0.67
+    }
+  },
+  {
+    "name": "Temasek Primary School",
+    "addr": "22 Bedok South Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3191,
+    "lng": 103.9291,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.13,
+    "p2c_ratio": 1.7,
+    "pv": false,
+    "hist": [
+      0.98,
+      1.45,
+      1.7
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.69,
+      "2020": 0.72,
+      "2021": 0.75,
+      "2022": 0.88,
+      "2023": 0.98,
+      "2024": 1.45,
+      "2025": 1.7
+    },
+    "hist2b": {
+      "2019": 0.79,
+      "2020": 0.83,
+      "2021": 0.85,
+      "2022": 0.99,
+      "2023": 1.04,
+      "2024": 1.08,
+      "2025": 1.13
+    }
+  },
+  {
+    "name": "Telok Kurau Primary School",
+    "addr": "50 Telok Kurau Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3098,
+    "lng": 103.9012,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 0.95,
+    "p2c_ratio": 1.45,
+    "pv": false,
+    "hist": [
+      0.8,
+      1.1,
+      1.45
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.56,
+      "2020": 0.59,
+      "2021": 0.62,
+      "2022": 0.72,
+      "2023": 0.8,
+      "2024": 1.1,
+      "2025": 1.45
+    },
+    "hist2b": {
+      "2019": 0.66,
+      "2020": 0.7,
+      "2021": 0.72,
+      "2022": 0.84,
+      "2023": 0.87,
+      "2024": 0.91,
+      "2025": 0.95
+    }
+  },
+  {
+    "name": "Townsville Primary School",
+    "addr": "10 Tampines Avenue 10",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3641,
+    "lng": 103.9541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.68,
+    "p2c_ratio": 0.82,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.74,
+      0.82
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.74,
+      "2025": 0.82
+    },
+    "hist2b": {
+      "2019": 0.48,
+      "2020": 0.5,
+      "2021": 0.51,
+      "2022": 0.6,
+      "2023": 0.63,
+      "2024": 0.65,
+      "2025": 0.68
+    }
+  },
+  {
+    "name": "Unity Primary School",
+    "addr": "10 Bukit Batok Street 21",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3491,
+    "lng": 103.7541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Waterway Primary School",
+    "addr": "51 Punggol Drive",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4041,
+    "lng": 103.9091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "Wellington Primary School",
+    "addr": "10 Woodlands Street 12",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4321,
+    "lng": 103.7912,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.8,
+    "pv": false,
+    "hist": [
+      0.5,
+      0.7,
+      0.8
+    ],
+    "ccas": [
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.35,
+      "2020": 0.37,
+      "2021": 0.39,
+      "2022": 0.45,
+      "2023": 0.5,
+      "2024": 0.7,
+      "2025": 0.8
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "West Grove Primary School",
+    "addr": "1 Bukit Batok West Avenue 8",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3591,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "West Spring Primary School",
+    "addr": "2 Bukit Panjang Ring Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3841,
+    "lng": 103.7591,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Art Club",
+      "Dance"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  },
+  {
+    "name": "West View Primary School",
+    "addr": "1 Jurong West Street 64",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3541,
+    "lng": 103.7091,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.6,
+    "p2c_ratio": 0.73,
+    "pv": false,
+    "hist": [
+      0.53,
+      0.66,
+      0.73
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.37,
+      "2020": 0.39,
+      "2021": 0.41,
+      "2022": 0.48,
+      "2023": 0.53,
+      "2024": 0.66,
+      "2025": 0.73
+    },
+    "hist2b": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.55,
+      "2024": 0.58,
+      "2025": 0.6
+    }
+  },
+  {
+    "name": "White Sands Primary School",
+    "addr": "1 Pasir Ris Drive 1",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3741,
+    "lng": 103.9491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.69,
+    "p2c_ratio": 0.83,
+    "pv": false,
+    "hist": [
+      0.61,
+      0.75,
+      0.83
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.61,
+      "2024": 0.75,
+      "2025": 0.83
+    },
+    "hist2b": {
+      "2019": 0.48,
+      "2020": 0.51,
+      "2021": 0.52,
+      "2022": 0.61,
+      "2023": 0.63,
+      "2024": 0.66,
+      "2025": 0.69
+    }
+  },
+  {
+    "name": "Woodgrove Primary School",
+    "addr": "1 Woodlands Avenue 6",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4291,
+    "lng": 103.7891,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Woodlands Primary School",
+    "addr": "2 Woodlands Avenue 1",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4341,
+    "lng": 103.7841,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Art Club",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Woodlands Ring Primary School",
+    "addr": "7 Woodlands Ring Road",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4401,
+    "lng": 103.7845,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.7,
+    "p2c_ratio": 0.85,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.75,
+      0.85
+    ],
+    "ccas": [
+      "Football",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.75,
+      "2025": 0.85
+    },
+    "hist2b": {
+      "2019": 0.49,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.64,
+      "2024": 0.67,
+      "2025": 0.7
+    }
+  },
+  {
+    "name": "Xinghua Primary School",
+    "addr": "1 Tampines Avenue 1",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3491,
+    "lng": 103.9391,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.05,
+    "p2c_ratio": 1.58,
+    "pv": false,
+    "hist": [
+      0.9,
+      1.33,
+      1.58
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.63,
+      "2020": 0.66,
+      "2021": 0.69,
+      "2022": 0.81,
+      "2023": 0.9,
+      "2024": 1.33,
+      "2025": 1.58
+    },
+    "hist2b": {
+      "2019": 0.73,
+      "2020": 0.77,
+      "2021": 0.79,
+      "2022": 0.92,
+      "2023": 0.97,
+      "2024": 1.01,
+      "2025": 1.05
+    }
+  },
+  {
+    "name": "Xingnan Primary School",
+    "addr": "10 Fernvale Link",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3941,
+    "lng": 103.8791,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.06,
+    "p2c_ratio": 1.59,
+    "pv": false,
+    "hist": [
+      0.91,
+      1.34,
+      1.59
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Choir",
+      "Wushu"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.64,
+      "2020": 0.67,
+      "2021": 0.7,
+      "2022": 0.82,
+      "2023": 0.91,
+      "2024": 1.34,
+      "2025": 1.59
+    },
+    "hist2b": {
+      "2019": 0.74,
+      "2020": 0.78,
+      "2021": 0.8,
+      "2022": 0.93,
+      "2023": 0.98,
+      "2024": 1.02,
+      "2025": 1.06
+    }
+  },
+  {
+    "name": "Xingzheng School",
+    "addr": "30 Choa Chu Kang Avenue 1",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3841,
+    "lng": 103.7441,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.78,
+    "p2c_ratio": 0.94,
+    "pv": false,
+    "hist": [
+      0.69,
+      0.84,
+      0.94
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.48,
+      "2020": 0.51,
+      "2021": 0.53,
+      "2022": 0.62,
+      "2023": 0.69,
+      "2024": 0.84,
+      "2025": 0.94
+    },
+    "hist2b": {
+      "2019": 0.55,
+      "2020": 0.57,
+      "2021": 0.59,
+      "2022": 0.69,
+      "2023": 0.72,
+      "2024": 0.75,
+      "2025": 0.78
+    }
+  },
+  {
+    "name": "Xishan Primary School",
+    "addr": "18 Choa Chu Kang Street 62",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3891,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.07,
+    "p2c_ratio": 1.61,
+    "pv": false,
+    "hist": [
+      0.92,
+      1.36,
+      1.61
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.64,
+      "2020": 0.68,
+      "2021": 0.71,
+      "2022": 0.83,
+      "2023": 0.92,
+      "2024": 1.36,
+      "2025": 1.61
+    },
+    "hist2b": {
+      "2019": 0.75,
+      "2020": 0.79,
+      "2021": 0.81,
+      "2022": 0.94,
+      "2023": 0.98,
+      "2024": 1.03,
+      "2025": 1.07
+    }
+  },
+  {
+    "name": "Yangzheng Primary School",
+    "addr": "1 Serangoon Avenue 2",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3541,
+    "lng": 103.8741,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.08,
+    "p2c_ratio": 1.62,
+    "pv": false,
+    "hist": [
+      0.93,
+      1.38,
+      1.62
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Choir",
+      "Wushu"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.65,
+      "2020": 0.68,
+      "2021": 0.72,
+      "2022": 0.84,
+      "2023": 0.93,
+      "2024": 1.38,
+      "2025": 1.62
+    },
+    "hist2b": {
+      "2019": 0.76,
+      "2020": 0.79,
+      "2021": 0.82,
+      "2022": 0.95,
+      "2023": 0.99,
+      "2024": 1.04,
+      "2025": 1.08
+    }
+  },
+  {
+    "name": "Yew Tee Primary School",
+    "addr": "8 Choa Chu Kang Street 52",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3941,
+    "lng": 103.7491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.64,
+    "p2c_ratio": 0.77,
+    "pv": false,
+    "hist": [
+      0.57,
+      0.7,
+      0.77
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.4,
+      "2020": 0.42,
+      "2021": 0.44,
+      "2022": 0.51,
+      "2023": 0.57,
+      "2024": 0.7,
+      "2025": 0.77
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.47,
+      "2021": 0.48,
+      "2022": 0.56,
+      "2023": 0.59,
+      "2024": 0.61,
+      "2025": 0.64
+    }
+  },
+  {
+    "name": "Yio Chu Kang Primary School",
+    "addr": "10 Ang Mo Kio Avenue 5",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3791,
+    "lng": 103.8491,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.66,
+    "p2c_ratio": 0.8,
+    "pv": false,
+    "hist": [
+      0.59,
+      0.73,
+      0.8
+    ],
+    "ccas": [
+      "Football",
+      "Dance",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.53,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.8
+    },
+    "hist2b": {
+      "2019": 0.46,
+      "2020": 0.49,
+      "2021": 0.5,
+      "2022": 0.58,
+      "2023": 0.61,
+      "2024": 0.63,
+      "2025": 0.66
+    }
+  },
+  {
+    "name": "Yishun Primary School",
+    "addr": "21 Yishun Street 21",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4291,
+    "lng": 103.8391,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.61,
+    "p2c_ratio": 0.74,
+    "pv": false,
+    "hist": [
+      0.54,
+      0.67,
+      0.74
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.38,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.49,
+      "2023": 0.54,
+      "2024": 0.67,
+      "2025": 0.74
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.45,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.56,
+      "2024": 0.59,
+      "2025": 0.61
+    }
+  },
+  {
+    "name": "Yu Neng Primary School",
+    "addr": "1 Pasir Ris Drive 4",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3741,
+    "lng": 103.9541,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.67,
+    "p2c_ratio": 0.81,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.74,
+      0.81
+    ],
+    "ccas": [
+      "Football",
+      "Art Club"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.74,
+      "2025": 0.81
+    },
+    "hist2b": {
+      "2019": 0.47,
+      "2020": 0.49,
+      "2021": 0.51,
+      "2022": 0.59,
+      "2023": 0.62,
+      "2024": 0.64,
+      "2025": 0.67
+    }
+  },
+  {
+    "name": "Yuhua Primary School",
+    "addr": "10 Jurong East Avenue 1",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3441,
+    "lng": 103.7391,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.63,
+    "p2c_ratio": 0.76,
+    "pv": false,
+    "hist": [
+      0.56,
+      0.69,
+      0.76
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.41,
+      "2021": 0.43,
+      "2022": 0.5,
+      "2023": 0.56,
+      "2024": 0.69,
+      "2025": 0.76
+    },
+    "hist2b": {
+      "2019": 0.44,
+      "2020": 0.46,
+      "2021": 0.48,
+      "2022": 0.55,
+      "2023": 0.58,
+      "2024": 0.6,
+      "2025": 0.63
+    }
+  },
+  {
+    "name": "Yusof Ishak Primary School",
+    "addr": "5 Woodlands Avenue 7",
+    "zone": "North",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.4341,
+    "lng": 103.7941,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.62,
+    "p2c_ratio": 0.75,
+    "pv": false,
+    "hist": [
+      0.55,
+      0.68,
+      0.75
+    ],
+    "ccas": [
+      "Football",
+      "Choir",
+      "Drama"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.39,
+      "2020": 0.4,
+      "2021": 0.42,
+      "2022": 0.5,
+      "2023": 0.55,
+      "2024": 0.68,
+      "2025": 0.75
+    },
+    "hist2b": {
+      "2019": 0.43,
+      "2020": 0.46,
+      "2021": 0.47,
+      "2022": 0.55,
+      "2023": 0.57,
+      "2024": 0.6,
+      "2025": 0.62
+    }
+  },
+  {
+    "name": "Zhangde Primary School",
+    "addr": "11 Mattar Road",
+    "zone": "East",
+    "gender": "Co-ed",
+    "types": [
+      "SAP"
+    ],
+    "lat": 1.3291,
+    "lng": 103.8891,
+    "p2b": "Easy",
+    "p2c": "Moderate",
+    "p2b_ratio": 1.09,
+    "p2c_ratio": 1.64,
+    "pv": false,
+    "hist": [
+      0.94,
+      1.39,
+      1.64
+    ],
+    "ccas": [
+      "Chinese Orchestra",
+      "Wushu",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 6.5,
+      "homework": 6.0,
+      "parentComp": 6.5,
+      "teacherQ": 7.5,
+      "culture": 7.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.66,
+      "2020": 0.69,
+      "2021": 0.72,
+      "2022": 0.85,
+      "2023": 0.94,
+      "2024": 1.39,
+      "2025": 1.64
+    },
+    "hist2b": {
+      "2019": 0.76,
+      "2020": 0.8,
+      "2021": 0.82,
+      "2022": 0.96,
+      "2023": 1.0,
+      "2024": 1.05,
+      "2025": 1.09
+    }
+  },
+  {
+    "name": "Zhenghua Primary School",
+    "addr": "21 Bukit Panjang Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3778,
+    "lng": 103.7715,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.75,
+    "p2c_ratio": 0.9,
+    "pv": false,
+    "hist": [
+      0.6,
+      0.8,
+      0.9
+    ],
+    "ccas": [
+      "Art Club",
+      "Football"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.42,
+      "2020": 0.44,
+      "2021": 0.46,
+      "2022": 0.54,
+      "2023": 0.6,
+      "2024": 0.8,
+      "2025": 0.9
+    },
+    "hist2b": {
+      "2019": 0.52,
+      "2020": 0.55,
+      "2021": 0.57,
+      "2022": 0.66,
+      "2023": 0.69,
+      "2024": 0.72,
+      "2025": 0.75
+    }
+  },
+  {
+    "name": "Zhen Hai Primary School",
+    "addr": "11 Bukit Panjang Ring Road",
+    "zone": "West",
+    "gender": "Co-ed",
+    "types": [],
+    "lat": 1.3791,
+    "lng": 103.7641,
+    "p2b": "Easy",
+    "p2c": "Easy",
+    "p2b_ratio": 0.65,
+    "p2c_ratio": 0.78,
+    "pv": false,
+    "hist": [
+      0.58,
+      0.71,
+      0.78
+    ],
+    "ccas": [
+      "Football",
+      "Choir"
+    ],
+    "vibe": {
+      "academic": 5.0,
+      "homework": 4.5,
+      "parentComp": 4.0,
+      "teacherQ": 7.5,
+      "culture": 8.5,
+      "overall": 7.0
+    },
+    "hist2c": {
+      "2019": 0.41,
+      "2020": 0.43,
+      "2021": 0.45,
+      "2022": 0.52,
+      "2023": 0.58,
+      "2024": 0.71,
+      "2025": 0.78
+    },
+    "hist2b": {
+      "2019": 0.45,
+      "2020": 0.48,
+      "2021": 0.49,
+      "2022": 0.57,
+      "2023": 0.6,
+      "2024": 0.62,
+      "2025": 0.65
+    }
+  }
+]
