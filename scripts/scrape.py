@@ -19,11 +19,28 @@ from pathlib import Path
 # ─────────────────────────────────────────────
 
 def fetch_all(url):
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; P1Finder/1.0; +https://p1-school-finder.vercel.app)",
+        "Accept": "application/json",
+    }
     records = []
     offset = 0
+    retries = 5
     while True:
-        r = requests.get(f"{url}&offset={offset}", timeout=20)
-        r.raise_for_status()
+        for attempt in range(retries):
+            try:
+                r = requests.get(f"{url}&offset={offset}", headers=headers, timeout=30)
+                if r.status_code == 429:
+                    wait = 10 * (attempt + 1)
+                    print(f"  Rate limited, waiting {wait}s...")
+                    time.sleep(wait)
+                    continue
+                r.raise_for_status()
+                break
+            except requests.exceptions.RequestException as e:
+                if attempt == retries - 1:
+                    raise
+                time.sleep(5)
         result = r.json()["result"]
         batch = result["records"]
         records.extend(batch)
@@ -31,7 +48,7 @@ def fetch_all(url):
         if len(records) >= result["total"]:
             break
         offset += len(batch)
-        time.sleep(0.5)
+        time.sleep(2)
     return records
 
 def fetch_school_directory():
