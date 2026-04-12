@@ -24,6 +24,8 @@ jobs:
         run: pip install requests beautifulsoup4 lxml
 
       - name: Run scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/scrape.py
 
       - name: Check if schools.json changed
