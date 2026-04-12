@@ -2,8 +2,10 @@
 P1 School Data Scraper
 ======================
 Pulls from:
-  1. data.gov.sg - official MOE school directory (names, addresses, lat/lng, zones, types, CCAs)
-  2. elite.com.sg - Phase 2B/2C balloting data (HTML table, no JS rendering needed)
+  1. data.gov.sg - official MOE school directory (names, addresses, zones, types)
+  2. data.gov.sg - CCAs (resource: d_9aba12b5527843afb0b2e8e4ed6ac6bd)
+  3. OneMap API - geocoding lat/lng from postal codes
+  4. p1registration.sg - Phase 2B/2C balloting data (2025)
 
 Outputs: src/schools.json
 """
@@ -158,25 +160,8 @@ def dgp_to_zone(dgp):
 def fetch_ccas(schools):
     print("Fetching CCAs from data.gov.sg...")
     # Try multiple known resource IDs for CCAs
-    cca_resource_ids = [
-        "d_cf4229e5cefe9a8bec60571a29ca6d31",
-        "d_8acad1b5e04e3a1cff8c4b5e04e3a1cf",
-        "ede26d32-01af-4228-b1ed-f05c45a1d8ee",
-    ]
-    url = None
-    for rid in cca_resource_ids:
-        test_url = f"https://data.gov.sg/api/action/datastore_search?resource_id={rid}&limit=5"
-        try:
-            tr = requests.get(test_url, timeout=10)
-            if tr.status_code == 200 and tr.json().get("result"):
-                url = f"https://data.gov.sg/api/action/datastore_search?resource_id={rid}&limit=500"
-                print(f"  Using CCA resource: {rid}")
-                break
-        except Exception:
-            pass
-    if not url:
-        print("  No valid CCA resource found, skipping")
-        return
+    url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_9aba12b5527843afb0b2e8e4ed6ac6bd&limit=500"
+    print(f"  Using CCA resource: d_9aba12b5527843afb0b2e8e4ed6ac6bd")
     try:
         time.sleep(5)  # extra pause before second API call
         records = fetch_all(url)
@@ -198,60 +183,81 @@ def fetch_ccas(schools):
 # ─────────────────────────────────────────────
 
 def fetch_balloting(schools):
-    print("Fetching balloting data from elite.com.sg...")
+    print("Fetching balloting data from p1registration.sg...")
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
+        "Accept": "text/html,application/xhtml+xml",
     }
 
-    # Try multiple URLs for balloting data
-    balloting_urls = [
-        "https://elite.com.sg/primary-schools",
-        "https://elite.com.sg/primary-schools/",
-    ]
+    urls = {
+        "p2b": "https://www.p1registration.sg/2025/07/10/p1-registration-phase-2b-results-2025-balloting-analysis/",
+        "p2c": "https://www.p1registration.sg/2025/07/10/p1-registration-phase-2c-results-2025-balloting-analysis/",
+    }
 
-    for phase, phase_key in [("2B", "p2b"), ("2C", "p2c")]:
-        matched = 0
-        for base_url in balloting_urls:
-            try:
-                r = requests.get(base_url, headers=headers, timeout=20)
-                r.raise_for_status()
-                soup = BeautifulSoup(r.text, "lxml")
-
-                # Try to find any table or data structure
-                tables = soup.find_all("table")
-                print(f"  Phase {phase}: found {len(tables)} tables on page")
-
-                for table in tables:
-                    rows = table.find_all("tr")[1:]
-                    for row in rows:
-                        cells = [td.get_text(strip=True) for td in row.find_all("td")]
-                        if len(cells) < 3:
+    for phase_key, url in urls.items():
+        try:
+            r = requests.get(url, headers=headers, timeout=20)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "lxml")
+            tables = soup.find_all("table")
+            print(f"  {phase_key}: found {len(tables)} tables")
+            matched = 0
+            for table in tables:
+                rows = table.find_all("tr")
+                for row in rows[1:]:
+                    cells = [td.get_text(strip=True) for td in row.find_all(["td","th"])]
+                    if len(cells) < 2:
+                        continue
+                    school_name = cells[0].strip().title()
+                    # Find numeric ratio in cells
+                    for cell in cells[1:]:
+                        try:
+                            val = float(cell.replace(",","").replace("%","").strip())
+                            if 0.1 < val < 20:
+                                match = find_school(school_name, schools)
+                                if match:
+                                    schools[match][f"{phase_key}_ratio"] = round(val, 2)
+                                    schools[match][phase_key] = ratio_label(val)
+                                    if phase_key == "p2b" and val > 1.0:
+                                        schools[match]["pv"] = True
+                                    matched += 1
+                                break
+                        except ValueError:
                             continue
-                        school_name = cells[0].strip().title()
-                        # Look for phase-specific columns
-                        for i, cell in enumerate(cells[1:], 1):
-                            try:
-                                val = float(cell.replace(",", "").replace("-", "0").replace("%", ""))
-                                if 0 < val < 20:  # reasonable ratio range
-                                    match = find_school(school_name, schools)
-                                    if match and schools[match][f"{phase_key}_ratio"] == 0.0:
-                                        schools[match][f"{phase_key}_ratio"] = round(val, 2)
-                                        schools[match][phase_key] = ratio_label(val)
-                                        if phase_key == "p2b" and val > 2.5:
-                                            schools[match]["pv"] = True
-                                        matched += 1
-                                        break
-                            except ValueError:
-                                pass
-                if matched > 0:
-                    break
-                time.sleep(1)
-            except Exception as e:
-                print(f"  Phase {phase} from {base_url} failed: {e}")
+            print(f"  {phase_key}: matched {matched} schools")
 
-        print(f"  Phase {phase}: matched {matched} schools")
+            # Also try MOE past vacancies page as fallback
+            if matched == 0:
+                print(f"  Trying MOE past vacancies page...")
+                moe_url = "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data"
+                try:
+                    mr = requests.get(moe_url, headers=headers, timeout=20)
+                    ms = BeautifulSoup(mr.text, "lxml")
+                    for tbl in ms.find_all("table"):
+                        rows = tbl.find_all("tr")
+                        for row in rows[1:]:
+                            cells = [td.get_text(strip=True) for td in row.find_all(["td","th"])]
+                            if len(cells) < 3:
+                                continue
+                            school_name = cells[0].strip().title()
+                            match = find_school(school_name, schools)
+                            if match:
+                                try:
+                                    vacancies = int(cells[1].replace(",",""))
+                                    applicants = int(cells[2].replace(",",""))
+                                    ratio = round(applicants/vacancies, 2) if vacancies > 0 else 0
+                                    schools[match][f"{phase_key}_ratio"] = ratio
+                                    schools[match][phase_key] = ratio_label(ratio)
+                                    matched += 1
+                                except (ValueError, ZeroDivisionError):
+                                    pass
+                    print(f"  MOE fallback: matched {matched} schools")
+                except Exception as e:
+                    print(f"  MOE fallback failed: {e}")
+
+            time.sleep(2)
+        except Exception as e:
+            print(f"  {phase_key} failed: {e}")
 
 def find_school(name, schools):
     if name in schools:
@@ -274,52 +280,53 @@ def ratio_label(r):
     return "Competitive"
 
 # ─────────────────────────────────────────────
-# 3. HISTORICAL DATA — elite.com.sg years
+# 3. HISTORICAL DATA — p1registration.sg
 # ─────────────────────────────────────────────
 
 def fetch_history(schools):
-    print("Fetching historical balloting data...")
-    headers = {"User-Agent": "Mozilla/5.0 (compatible; P1Finder/1.0)"}
-    years = [2021, 2022, 2023, 2024, 2025]
+    print("Fetching historical balloting data from p1registration.sg...")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    }
+    years = [2022, 2023, 2024, 2025]
 
     for year in years:
         for phase, phase_key in [("2B", "hist2b"), ("2C", "hist2c")]:
-            url = f"https://elite.com.sg/primary-schools?phase={phase}&year={year}"
+            slug = "phase-2b" if phase == "2B" else "phase-2c"
+            url = f"https://www.p1registration.sg/{year}/07/10/p1-registration-{slug}-results-{year}-balloting-analysis/"
             try:
                 r = requests.get(url, headers=headers, timeout=20)
-                r.raise_for_status()
-                soup = BeautifulSoup(r.text, "lxml")
-                table = soup.find("table")
-                if not table:
+                if r.status_code != 200:
                     continue
-                rows = table.find_all("tr")[1:]
-                for row in rows:
-                    cells = [td.get_text(strip=True) for td in row.find_all("td")]
-                    if len(cells) < 3:
-                        continue
-                    school_name = cells[0].strip().title()
-                    try:
-                        vacancies = int(cells[1].replace(",", "").replace("-", "0"))
-                        applicants = int(cells[2].replace(",", "").replace("-", "0"))
-                        ratio = round(applicants / vacancies, 2) if vacancies > 0 else 0.0
-                    except (ValueError, ZeroDivisionError):
-                        ratio = 0.0
-                    match = find_school(school_name, schools)
-                    if match:
-                        schools[match][phase_key][str(year)] = ratio
-                time.sleep(0.5)
+                soup = BeautifulSoup(r.text, "lxml")
+                for table in soup.find_all("table"):
+                    rows = table.find_all("tr")
+                    for row in rows[1:]:
+                        cells = [td.get_text(strip=True) for td in row.find_all(["td","th"])]
+                        if len(cells) < 2:
+                            continue
+                        school_name = cells[0].strip().title()
+                        for cell in cells[1:]:
+                            try:
+                                val = float(cell.replace(",","").replace("%","").strip())
+                                if 0.1 < val < 20:
+                                    match = find_school(school_name, schools)
+                                    if match:
+                                        schools[match][phase_key][str(year)] = round(val, 2)
+                                    break
+                            except ValueError:
+                                continue
+                time.sleep(1)
             except Exception as e:
                 print(f"  {year} Phase {phase} failed: {e}")
-                time.sleep(1)
 
-    # Also build simple hist list [2023, 2024, 2025] for backward compat
+    # Build simple hist list for backward compat
     for s in schools.values():
         hist2c = s.get("hist2c", {})
         s["hist"] = [hist2c.get(str(y), s["p2c_ratio"]) for y in [2023, 2024, 2025]]
 
     print("  Historical data attached")
 
-# ─────────────────────────────────────────────
 # 4. VIBE SCORES — estimated from competitiveness
 # ─────────────────────────────────────────────
 
