@@ -41,14 +41,20 @@ def fetch_all(url):
                 if attempt == retries - 1:
                     raise
                 time.sleep(5)
-        result = r.json()["result"]
-        batch = result["records"]
+        try:
+            data = r.json()
+            result = data["result"]
+            batch = result["records"]
+        except (KeyError, ValueError) as e:
+            print(f"  Unexpected response: {e}, retrying after 30s...")
+            time.sleep(30)
+            continue
         records.extend(batch)
         print(f"  Fetched {len(records)}/{result['total']}")
         if len(records) >= result["total"]:
             break
         offset += len(batch)
-        time.sleep(2)
+        time.sleep(3)
     return records
 
 def fetch_school_directory():
@@ -142,17 +148,21 @@ def dgp_to_zone(dgp):
 def fetch_ccas(schools):
     print("Fetching CCAs from data.gov.sg...")
     url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_cf4229e5cefe9a8bec60571a29ca6d31&limit=500"
-    records = fetch_all(url)
-    cca_map = {}
-    for r in records:
-        name = r.get("school_name", "").strip().title()
-        cca = r.get("cca_generic_name", "").strip().title()
-        if name and cca:
-            cca_map.setdefault(name, set()).add(cca)
-    for name, school in schools.items():
-        school["ccas"] = sorted(cca_map.get(name, []))
-    matched = sum(1 for s in schools.values() if s["ccas"])
-    print(f"  Attached CCAs to {matched} schools")
+    try:
+        time.sleep(5)  # extra pause before second API call
+        records = fetch_all(url)
+        cca_map = {}
+        for r in records:
+            name = r.get("school_name", "").strip().title()
+            cca = r.get("cca_generic_name", "").strip().title()
+            if name and cca:
+                cca_map.setdefault(name, set()).add(cca)
+        for name, school in schools.items():
+            school["ccas"] = sorted(cca_map.get(name, []))
+        matched = sum(1 for s in schools.values() if s["ccas"])
+        print(f"  Attached CCAs to {matched} schools")
+    except Exception as e:
+        print(f"  CCAs fetch failed ({e}), skipping — will use empty lists")
 
 # ─────────────────────────────────────────────
 # 2. ELITE.COM.SG — Balloting Data
