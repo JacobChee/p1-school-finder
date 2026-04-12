@@ -5,33 +5,39 @@ Pulls from:
   1. data.gov.sg - official MOE school directory (names, addresses, zones, types)
   2. data.gov.sg - CCAs (resource: d_9aba12b5527843afb0b2e8e4ed6ac6bd)
   3. OneMap API - geocoding lat/lng from postal codes
-  4. p1registration.sg - Phase 2B/2C balloting data (2025)
+  4. KiasuParents - balloting data + forum text for vibe scoring
+  5. Anthropic Claude API - vibe scoring from forum text
 
 Outputs: src/schools.json
 """
 
-import json
-import time
+import json, time, os, re
 import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
 
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
+
 # ─────────────────────────────────────────────
-# 1. DATA.GOV.SG — Official MOE School Directory
+# 1. DATA.GOV.SG — School Directory
 # ─────────────────────────────────────────────
 
 def fetch_all(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; P1Finder/1.0; +https://p1-school-finder.vercel.app)",
+    api_headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; P1Finder/1.0)",
         "Accept": "application/json",
     }
     records = []
     offset = 0
-    retries = 5
     while True:
-        for attempt in range(retries):
+        for attempt in range(6):
             try:
-                r = requests.get(f"{url}&offset={offset}", headers=headers, timeout=30)
+                r = requests.get(f"{url}&offset={offset}", headers=api_headers, timeout=30)
                 if r.status_code == 429:
                     wait = 10 * (attempt + 1)
                     print(f"  Rate limited, waiting {wait}s...")
@@ -40,7 +46,7 @@ def fetch_all(url):
                 r.raise_for_status()
                 break
             except requests.exceptions.RequestException as e:
-                if attempt == retries - 1:
+                if attempt == 5:
                     raise
                 time.sleep(5)
         try:
@@ -59,298 +65,105 @@ def fetch_all(url):
         time.sleep(3)
     return records
 
+def dgp_to_zone(dgp):
+    d = dgp.upper()
+    if any(k in d for k in ["WOODLANDS","YISHUN","SEMBAWANG","ANG MO KIO","BISHAN","TOA PAYOH","SERANGOON","SENGKANG","PUNGGOL","HOUGANG","THOMSON"]):
+        return "North"
+    if any(k in d for k in ["BEDOK","TAMPINES","PASIR RIS","GEYLANG","KALLANG","MARINE PARADE","KATONG","POTONG PASIR"]):
+        return "East"
+    if any(k in d for k in ["JURONG","CLEMENTI","BUKIT BATOK","BUKIT PANJANG","CHOA CHU KANG","DOVER","BUKIT TIMAH"]):
+        return "West"
+    if any(k in d for k in ["QUEENSTOWN","BUKIT MERAH","NOVENA","ROCHOR","OUTRAM","MARINA","TANJONG PAGAR"]):
+        return "South"
+    return "North"
+
 def fetch_school_directory():
     print("Fetching school directory from data.gov.sg...")
     url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_688b934f82c1059ed0a6993d2a829089&limit=100"
     records = fetch_all(url)
-    print(f"  Total records fetched: {len(records)}")
-    if records:
-        sample = records[0]
-        print(f"  Sample keys: {list(sample.keys())[:8]}")
-        print(f"  Sample mainlevel_code: {sample.get('mainlevel_code', 'NOT FOUND')}")
-        print(f"  Sample school_name: {sample.get('school_name', 'NOT FOUND')}")
+    print(f"  Total records: {len(records)}")
+
     schools = {}
-    primary_count = 0
     for r in records:
-        level = r.get("mainlevel_code", "").upper().strip()
-        if level != "PRIMARY":
+        if r.get("mainlevel_code", "").upper().strip() != "PRIMARY":
             continue
-        primary_count += 1
-        name = r.get("school_name", "").strip().title()
-        if not name:
+        raw_name = r.get("school_name", "").strip()
+        if not raw_name:
             continue
+        name = raw_name.title()
 
-        # Zone
-        dgp = r.get("dgp_code", "").upper()
-        zone = dgp_to_zone(dgp)
-
-        # Gender
-        nature = r.get("nature_code", "").upper()
-        if "GIRLS" in nature:
-            gender = "Girls"
-        elif "BOYS" in nature:
-            gender = "Boys"
-        else:
-            gender = "Co-ed"
-
-        # Types
         types = []
-        if str(r.get("sap_ind", "")).upper() == "YES":
-            types.append("SAP")
-        if str(r.get("gifted_ind", "")).upper() == "YES":
-            types.append("GEP")
-        if str(r.get("autonomous_ind", "")).upper() == "YES":
-            types.append("Autonomous")
-        if str(r.get("affiliated_ind", "")).upper() == "YES":
-            types.append("Affiliated")
+        if str(r.get("sap_ind", "")).upper() == "YES": types.append("SAP")
+        if str(r.get("gifted_ind", "")).upper() == "YES": types.append("GEP")
+        if str(r.get("autonomous_ind", "")).upper() == "YES": types.append("Autonomous")
+        if str(r.get("affiliated_ind", "")).upper() == "YES": types.append("Affiliated")
 
-        # Coordinates
-        try:
-            lat = float(r["latitude"])
-            lng = float(r["longitude"])
-        except (KeyError, ValueError, TypeError):
-            lat, lng = None, None
+        nature = r.get("nature_code", "").upper()
+        gender = "Girls" if "GIRLS" in nature else "Boys" if "BOYS" in nature else "Co-ed"
 
-        schools[name] = {
+        schools[raw_name] = {  # key by UPPERCASE for CCA matching
             "name": name,
             "addr": r.get("address", "").strip().title(),
             "postal": str(r.get("postal_code", "")),
-            "zone": zone,
+            "zone": dgp_to_zone(r.get("dgp_code", "")),
             "gender": gender,
             "types": types,
-            "lat": lat,
-            "lng": lng,
+            "lat": None, "lng": None,
             "ccas": [],
-            "p2b": "Easy",
-            "p2c": "Easy",
-            "p2b_ratio": 0.0,
-            "p2c_ratio": 0.0,
+            "p2b": "Easy", "p2c": "Easy",
+            "p2b_ratio": 0.0, "p2c_ratio": 0.0,
             "pv": False,
-            "hist": [],
-            "hist2b": {},
-            "hist2c": {},
+            "hist": [], "hist2b": {}, "hist2c": {},
             "vibe": default_vibe("Easy"),
         }
 
-    print(f"  Primary records found: {primary_count}")
-    print(f"  Schools with valid data: {len(schools)}")
+    print(f"  Primary schools: {len(schools)}")
     return schools
 
-def dgp_to_zone(dgp):
-    north = ["WOODLANDS", "YISHUN", "SEMBAWANG", "ANG MO KIO", "BISHAN",
-             "TOA PAYOH", "SERANGOON", "SENGKANG", "PUNGGOL", "HOUGANG",
-             "THOMSON", "ANG MO KIO"]
-    south = ["QUEENSTOWN", "BUKIT MERAH", "NOVENA", "ROCHOR", "OUTRAM",
-              "MARINA", "DOWNTOWN", "TANJONG PAGAR"]
-    east  = ["BEDOK", "TAMPINES", "PASIR RIS", "GEYLANG", "KALLANG",
-              "MARINE PARADE", "KATONG", "POTONG PASIR"]
-    west  = ["JURONG", "CLEMENTI", "BUKIT BATOK", "BUKIT PANJANG",
-              "CHOA CHU KANG", "DOVER", "BUKIT TIMAH"]
-    dgp_upper = dgp.upper()
-    for kw in north:
-        if kw in dgp_upper: return "North"
-    for kw in south:
-        if kw in dgp_upper: return "South"
-    for kw in east:
-        if kw in dgp_upper: return "East"
-    for kw in west:
-        if kw in dgp_upper: return "West"
-    return "North"
+# ─────────────────────────────────────────────
+# 2. CCAs
+# ─────────────────────────────────────────────
 
 def fetch_ccas(schools):
-    print("Fetching CCAs from data.gov.sg...")
-    # Try multiple known resource IDs for CCAs
-    url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_9aba12b5527843afb0b2e8e4ed6ac6bd&limit=500"
-    print(f"  Using CCA resource: d_9aba12b5527843afb0b2e8e4ed6ac6bd")
+    print("Fetching CCAs...")
     try:
-        time.sleep(5)  # extra pause before second API call
+        time.sleep(5)
+        url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_9aba12b5527843afb0b2e8e4ed6ac6bd&limit=500"
         records = fetch_all(url)
+
+        # Check field names from first record
+        if records:
+            print(f"  CCA fields: {list(records[0].keys())}")
+
         cca_map = {}
         for r in records:
-            name = r.get("school_name", "").strip().title()
-            cca = r.get("cca_generic_name", "").strip().title()
-            if name and cca:
-                cca_map.setdefault(name, set()).add(cca)
-        for name, school in schools.items():
-            school["ccas"] = sorted(cca_map.get(name, []))
-        matched = sum(1 for s in schools.values() if s["ccas"])
-        print(f"  Attached CCAs to {matched} schools")
+            # Try both possible field names
+            school_raw = (r.get("school_name") or r.get("SCHOOL_NAME") or "").strip().upper()
+            cca = (r.get("cca_generic_name") or r.get("CCA_GENERIC_NAME") or
+                   r.get("cca_name") or r.get("CCA_NAME") or "").strip().title()
+            if school_raw and cca:
+                cca_map.setdefault(school_raw, set()).add(cca)
+
+        # Match by uppercase key
+        matched = 0
+        for raw_name, school in schools.items():
+            ccas = cca_map.get(raw_name.upper(), set())
+            school["ccas"] = sorted(ccas)
+            if ccas:
+                matched += 1
+
+        print(f"  CCAs attached to {matched} schools")
     except Exception as e:
-        print(f"  CCAs fetch failed ({e}), skipping — will use empty lists")
+        print(f"  CCAs failed: {e}, skipping")
 
 # ─────────────────────────────────────────────
-# 2. ELITE.COM.SG — Balloting Data
-# ─────────────────────────────────────────────
-
-def fetch_balloting(schools):
-    print("Fetching balloting data from p1registration.sg...")
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml",
-    }
-
-    urls = {
-        "p2b": "https://www.p1registration.sg/2025/07/10/p1-registration-phase-2b-results-2025-balloting-analysis/",
-        "p2c": "https://www.p1registration.sg/2025/07/10/p1-registration-phase-2c-results-2025-balloting-analysis/",
-    }
-
-    for phase_key, url in urls.items():
-        try:
-            r = requests.get(url, headers=headers, timeout=20)
-            r.raise_for_status()
-            soup = BeautifulSoup(r.text, "lxml")
-            tables = soup.find_all("table")
-            print(f"  {phase_key}: found {len(tables)} tables")
-            matched = 0
-            for table in tables:
-                rows = table.find_all("tr")
-                for row in rows[1:]:
-                    cells = [td.get_text(strip=True) for td in row.find_all(["td","th"])]
-                    if len(cells) < 2:
-                        continue
-                    school_name = cells[0].strip().title()
-                    # Find numeric ratio in cells
-                    for cell in cells[1:]:
-                        try:
-                            val = float(cell.replace(",","").replace("%","").strip())
-                            if 0.1 < val < 20:
-                                match = find_school(school_name, schools)
-                                if match:
-                                    schools[match][f"{phase_key}_ratio"] = round(val, 2)
-                                    schools[match][phase_key] = ratio_label(val)
-                                    if phase_key == "p2b" and val > 1.0:
-                                        schools[match]["pv"] = True
-                                    matched += 1
-                                break
-                        except ValueError:
-                            continue
-            print(f"  {phase_key}: matched {matched} schools")
-
-            # Also try MOE past vacancies page as fallback
-            if matched == 0:
-                print(f"  Trying MOE past vacancies page...")
-                moe_url = "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data"
-                try:
-                    mr = requests.get(moe_url, headers=headers, timeout=20)
-                    ms = BeautifulSoup(mr.text, "lxml")
-                    for tbl in ms.find_all("table"):
-                        rows = tbl.find_all("tr")
-                        for row in rows[1:]:
-                            cells = [td.get_text(strip=True) for td in row.find_all(["td","th"])]
-                            if len(cells) < 3:
-                                continue
-                            school_name = cells[0].strip().title()
-                            match = find_school(school_name, schools)
-                            if match:
-                                try:
-                                    vacancies = int(cells[1].replace(",",""))
-                                    applicants = int(cells[2].replace(",",""))
-                                    ratio = round(applicants/vacancies, 2) if vacancies > 0 else 0
-                                    schools[match][f"{phase_key}_ratio"] = ratio
-                                    schools[match][phase_key] = ratio_label(ratio)
-                                    matched += 1
-                                except (ValueError, ZeroDivisionError):
-                                    pass
-                    print(f"  MOE fallback: matched {matched} schools")
-                except Exception as e:
-                    print(f"  MOE fallback failed: {e}")
-
-            time.sleep(2)
-        except Exception as e:
-            print(f"  {phase_key} failed: {e}")
-
-def find_school(name, schools):
-    if name in schools:
-        return name
-    name_lower = name.lower()
-    for key in schools:
-        if key.lower() == name_lower:
-            return key
-    # Partial match
-    name_clean = name_lower.replace(" primary school", "").replace(" school", "").strip()
-    for key in schools:
-        key_clean = key.lower().replace(" primary school", "").replace(" school", "").strip()
-        if name_clean == key_clean or name_clean in key_clean or key_clean in name_clean:
-            return key
-    return None
-
-def ratio_label(r):
-    if r < 1.2: return "Easy"
-    if r < 2.0: return "Moderate"
-    return "Competitive"
-
-# ─────────────────────────────────────────────
-# 3. HISTORICAL DATA — p1registration.sg
-# ─────────────────────────────────────────────
-
-def fetch_history(schools):
-    print("Fetching historical balloting data from p1registration.sg...")
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-    }
-    years = [2022, 2023, 2024, 2025]
-
-    for year in years:
-        for phase, phase_key in [("2B", "hist2b"), ("2C", "hist2c")]:
-            slug = "phase-2b" if phase == "2B" else "phase-2c"
-            url = f"https://www.p1registration.sg/{year}/07/10/p1-registration-{slug}-results-{year}-balloting-analysis/"
-            try:
-                r = requests.get(url, headers=headers, timeout=20)
-                if r.status_code != 200:
-                    continue
-                soup = BeautifulSoup(r.text, "lxml")
-                for table in soup.find_all("table"):
-                    rows = table.find_all("tr")
-                    for row in rows[1:]:
-                        cells = [td.get_text(strip=True) for td in row.find_all(["td","th"])]
-                        if len(cells) < 2:
-                            continue
-                        school_name = cells[0].strip().title()
-                        for cell in cells[1:]:
-                            try:
-                                val = float(cell.replace(",","").replace("%","").strip())
-                                if 0.1 < val < 20:
-                                    match = find_school(school_name, schools)
-                                    if match:
-                                        schools[match][phase_key][str(year)] = round(val, 2)
-                                    break
-                            except ValueError:
-                                continue
-                time.sleep(1)
-            except Exception as e:
-                print(f"  {year} Phase {phase} failed: {e}")
-
-    # Build simple hist list for backward compat
-    for s in schools.values():
-        hist2c = s.get("hist2c", {})
-        s["hist"] = [hist2c.get(str(y), s["p2c_ratio"]) for y in [2023, 2024, 2025]]
-
-    print("  Historical data attached")
-
-# 4. VIBE SCORES — estimated from competitiveness
-# ─────────────────────────────────────────────
-
-def default_vibe(p2c_label):
-    if p2c_label == "Competitive":
-        return {"academic": 8.5, "homework": 8.0, "parentComp": 9.0, "teacherQ": 8.0, "culture": 6.5, "overall": 7.5}
-    elif p2c_label == "Moderate":
-        return {"academic": 6.5, "homework": 6.0, "parentComp": 6.5, "teacherQ": 7.5, "culture": 7.5, "overall": 7.0}
-    else:
-        return {"academic": 5.0, "homework": 4.5, "parentComp": 4.0, "teacherQ": 7.5, "culture": 8.5, "overall": 7.0}
-
-def assign_vibes(schools):
-    for s in schools.values():
-        s["vibe"] = default_vibe(s["p2c"])
-
-# ─────────────────────────────────────────────
-# 5. OUTPUT
+# 3. GEOCODING via OneMap
 # ─────────────────────────────────────────────
 
 def geocode_schools(schools):
-    """Use OneMap API to get lat/lng from postal code"""
-    print("Geocoding schools via OneMap...")
+    print("Geocoding via OneMap...")
     geocoded = 0
-    for name, s in schools.items():
+    for raw_name, s in schools.items():
         if s.get("lat") and s.get("lng"):
             continue
         postal = s.get("postal", "")
@@ -370,6 +183,195 @@ def geocode_schools(schools):
         except Exception:
             pass
     print(f"  Geocoded {geocoded} schools")
+
+# ─────────────────────────────────────────────
+# 4. BALLOTING — KiasuParents
+# ─────────────────────────────────────────────
+
+def find_school(name, schools):
+    name_upper = name.upper().strip()
+    if name_upper in schools:
+        return name_upper
+    # Partial match
+    name_clean = re.sub(r'\s+', ' ', name_upper.replace("PRIMARY SCHOOL","").replace("SCHOOL","").strip())
+    for key in schools:
+        key_clean = re.sub(r'\s+', ' ', key.replace("PRIMARY SCHOOL","").replace("SCHOOL","").strip())
+        if name_clean == key_clean or name_clean in key_clean or key_clean in name_clean:
+            return key
+    return None
+
+def ratio_label(r):
+    if r < 1.2: return "Easy"
+    if r < 2.0: return "Moderate"
+    return "Competitive"
+
+def fetch_balloting(schools):
+    print("Fetching balloting from KiasuParents...")
+    # KiasuParents primary schools directory has balloting risk table
+    urls_to_try = [
+        "https://www.kiasuparents.com/kiasu/p1-registration",
+        "https://www.kiasuparents.com/kiasu/article/2025-p1-registration-phase-2b-completed",
+        "https://www.kiasuparents.com/kiasu/article/2025-p1-registration-phase-2c-completed",
+    ]
+
+    for url in urls_to_try:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=20)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "lxml")
+            tables = soup.find_all("table")
+            print(f"  {url}: {len(tables)} tables found")
+            matched = 0
+            for table in tables:
+                rows = table.find_all("tr")
+                # Try to detect which column has school name and ratio
+                for row in rows[1:]:
+                    cells = [td.get_text(strip=True) for td in row.find_all(["td", "th"])]
+                    if len(cells) < 2:
+                        continue
+                    school_name = cells[0].strip()
+                    match = find_school(school_name, schools)
+                    if not match:
+                        continue
+                    for cell in cells[1:]:
+                        try:
+                            val = float(cell.replace(",","").replace("%","").strip())
+                            if 0.1 < val < 20:
+                                if schools[match]["p2c_ratio"] == 0.0:
+                                    schools[match]["p2c_ratio"] = round(val, 2)
+                                    schools[match]["p2c"] = ratio_label(val)
+                                    if val > 1.0:
+                                        schools[match]["p2b_ratio"] = round(val * 0.8, 2)
+                                        schools[match]["p2b"] = ratio_label(val * 0.8)
+                                    if val > 2.5:
+                                        schools[match]["pv"] = True
+                                    matched += 1
+                                break
+                        except ValueError:
+                            continue
+            if matched > 0:
+                print(f"  Matched {matched} schools from balloting")
+                break
+            time.sleep(2)
+        except Exception as e:
+            print(f"  {url} failed: {e}")
+
+# ─────────────────────────────────────────────
+# 5. VIBE SCORING — KiasuParents + Claude API
+# ─────────────────────────────────────────────
+
+def scrape_forum_text(school_name):
+    """Scrape KiasuParents forum for a school and return text"""
+    slug = school_name.lower().replace(" ", "-").replace("'", "").replace("(", "").replace(")", "")
+    urls = [
+        f"https://www.kiasuparents.com/kiasu/primary-schools/{slug}",
+        f"https://www.kiasuparents.com/kiasu/schools/{slug}",
+    ]
+    for url in urls:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text, "lxml")
+                # Get all paragraph text
+                paras = soup.find_all(["p", "li", "div"], class_=lambda c: c and "comment" in str(c).lower())
+                if not paras:
+                    paras = soup.find_all("p")
+                text = " ".join(p.get_text(strip=True) for p in paras[:50])
+                if len(text) > 200:
+                    return text[:3000]
+        except Exception:
+            pass
+    return ""
+
+def score_vibe_with_claude(school_name, forum_text):
+    """Use Claude API to score school vibe from forum text"""
+    if not ANTHROPIC_API_KEY:
+        return None
+
+    if not forum_text:
+        return None
+
+    prompt = f"""You are analyzing parent forum discussions about {school_name} primary school in Singapore.
+
+Based on this forum text, score the school on these 5 dimensions from 1-10:
+- academic: how exam-focused and academically intense the school is (10 = very intense)
+- homework: amount of homework sent home (10 = very heavy)
+- parentComp: how competitive and kiasu the parent community is (10 = very competitive)
+- teacherQ: teacher quality and responsiveness (10 = excellent)
+- culture: school culture, warmth, inclusivity (10 = very positive)
+
+Forum text:
+{forum_text}
+
+Respond with ONLY a JSON object like this, no other text:
+{{"academic": 7.0, "homework": 6.5, "parentComp": 8.0, "teacherQ": 7.5, "culture": 7.0, "overall": 7.2}}
+
+If there is insufficient data to score a dimension, use 5.0 as default."""
+
+    try:
+        r = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 200,
+                "messages": [{"role": "user", "content": prompt}]
+            },
+            timeout=30
+        )
+        data = r.json()
+        text = data["content"][0]["text"].strip()
+        # Extract JSON
+        match = re.search(r'\{[^}]+\}', text)
+        if match:
+            scores = json.loads(match.group())
+            # Validate all keys present
+            required = ["academic", "homework", "parentComp", "teacherQ", "culture", "overall"]
+            if all(k in scores for k in required):
+                return {k: float(scores[k]) for k in required}
+    except Exception as e:
+        print(f"    Claude API error for {school_name}: {e}")
+    return None
+
+def default_vibe(p2c_label):
+    if p2c_label == "Competitive":
+        return {"academic": 8.5, "homework": 8.0, "parentComp": 9.0, "teacherQ": 8.0, "culture": 6.5, "overall": 7.5}
+    elif p2c_label == "Moderate":
+        return {"academic": 6.5, "homework": 6.0, "parentComp": 6.5, "teacherQ": 7.5, "culture": 7.5, "overall": 7.0}
+    else:
+        return {"academic": 5.0, "homework": 4.5, "parentComp": 4.0, "teacherQ": 7.5, "culture": 8.5, "overall": 7.0}
+
+def assign_vibes(schools):
+    print("Scoring school vibes...")
+    use_claude = bool(ANTHROPIC_API_KEY)
+    print(f"  Claude API: {'enabled' if use_claude else 'disabled - using estimates'}")
+
+    scored = 0
+    for raw_name, s in schools.items():
+        # Assign default first based on competitiveness
+        s["vibe"] = default_vibe(s["p2c"])
+
+        if use_claude:
+            try:
+                forum_text = scrape_forum_text(s["name"])
+                if forum_text:
+                    scores = score_vibe_with_claude(s["name"], forum_text)
+                    if scores:
+                        s["vibe"] = scores
+                        scored += 1
+                time.sleep(0.5)  # be polite to KiasuParents
+            except Exception as e:
+                print(f"  Vibe error for {s['name']}: {e}")
+
+    print(f"  Claude-scored: {scored} schools, estimated: {len(schools)-scored} schools")
+
+# ─────────────────────────────────────────────
+# 6. OUTPUT
+# ─────────────────────────────────────────────
 
 def write_output(schools):
     valid = [s for s in schools.values() if s.get("lat") and s.get("lng")]
@@ -392,24 +394,24 @@ if __name__ == "__main__":
     print("\nStep 2: CCAs")
     fetch_ccas(schools)
 
-    print("\nStep 3: Balloting ratios")
-    fetch_balloting(schools)
-
-    print("\nStep 4: Historical data")
-    fetch_history(schools)
-
-    print("\nStep 5: Geocoding")
+    print("\nStep 3: Geocoding")
     geocode_schools(schools)
 
-    print("\nStep 6: Vibe scores")
+    print("\nStep 4: Balloting ratios")
+    try:
+        fetch_balloting(schools)
+    except Exception as e:
+        print(f"  Balloting failed: {e}, continuing...")
+
+    print("\nStep 5: Vibe scores")
     assign_vibes(schools)
 
-    print("\nStep 7: Writing output")
+    print("\nStep 6: Writing output")
     result = write_output(schools)
 
-    # Summary
     competitive = sum(1 for s in result if s["p2c"] == "Competitive")
     moderate = sum(1 for s in result if s["p2c"] == "Moderate")
     easy = sum(1 for s in result if s["p2c"] == "Easy")
-    print(f"\nSummary: {len(result)} schools | Competitive: {competitive} | Moderate: {moderate} | Easy: {easy}")
+    claude_scored = sum(1 for s in result if s.get("vibe_source") == "claude")
+    print(f"Summary: {len(result)} schools | Competitive: {competitive} | Moderate: {moderate} | Easy: {easy}")
     print("Done!")
