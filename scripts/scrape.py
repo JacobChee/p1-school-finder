@@ -157,7 +157,26 @@ def dgp_to_zone(dgp):
 
 def fetch_ccas(schools):
     print("Fetching CCAs from data.gov.sg...")
-    url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_cf4229e5cefe9a8bec60571a29ca6d31&limit=500"
+    # Try multiple known resource IDs for CCAs
+    cca_resource_ids = [
+        "d_cf4229e5cefe9a8bec60571a29ca6d31",
+        "d_8acad1b5e04e3a1cff8c4b5e04e3a1cf",
+        "ede26d32-01af-4228-b1ed-f05c45a1d8ee",
+    ]
+    url = None
+    for rid in cca_resource_ids:
+        test_url = f"https://data.gov.sg/api/action/datastore_search?resource_id={rid}&limit=5"
+        try:
+            tr = requests.get(test_url, timeout=10)
+            if tr.status_code == 200 and tr.json().get("result"):
+                url = f"https://data.gov.sg/api/action/datastore_search?resource_id={rid}&limit=500"
+                print(f"  Using CCA resource: {rid}")
+                break
+        except Exception:
+            pass
+    if not url:
+        print("  No valid CCA resource found, skipping")
+        return
     try:
         time.sleep(5)  # extra pause before second API call
         records = fetch_all(url)
@@ -180,47 +199,59 @@ def fetch_ccas(schools):
 
 def fetch_balloting(schools):
     print("Fetching balloting data from elite.com.sg...")
-    headers = {"User-Agent": "Mozilla/5.0 (compatible; P1Finder/1.0)"}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+    }
+
+    # Try multiple URLs for balloting data
+    balloting_urls = [
+        "https://elite.com.sg/primary-schools",
+        "https://elite.com.sg/primary-schools/",
+    ]
 
     for phase, phase_key in [("2B", "p2b"), ("2C", "p2c")]:
-        url = f"https://elite.com.sg/primary-schools?phase={phase}"
-        try:
-            r = requests.get(url, headers=headers, timeout=20)
-            r.raise_for_status()
-            soup = BeautifulSoup(r.text, "lxml")
-            table = soup.find("table")
-            if not table:
-                print(f"  No table found for Phase {phase}")
-                continue
+        matched = 0
+        for base_url in balloting_urls:
+            try:
+                r = requests.get(base_url, headers=headers, timeout=20)
+                r.raise_for_status()
+                soup = BeautifulSoup(r.text, "lxml")
 
-            rows = table.find_all("tr")[1:]  # skip header
-            matched = 0
-            for row in rows:
-                cells = [td.get_text(strip=True) for td in row.find_all("td")]
-                if len(cells) < 4:
-                    continue
-                school_name = cells[0].strip().title()
-                try:
-                    vacancies = int(cells[1].replace(",", "").replace("-", "0"))
-                    applicants = int(cells[2].replace(",", "").replace("-", "0"))
-                    ratio = round(applicants / vacancies, 2) if vacancies > 0 else 0.0
-                except (ValueError, ZeroDivisionError):
-                    ratio = 0.0
+                # Try to find any table or data structure
+                tables = soup.find_all("table")
+                print(f"  Phase {phase}: found {len(tables)} tables on page")
 
-                # Fuzzy match school name
-                match = find_school(school_name, schools)
-                if match:
-                    schools[match][f"{phase_key}_ratio"] = ratio
-                    schools[match][phase_key] = ratio_label(ratio)
-                    if phase_key == "p2b" and ratio > 2.5:
-                        schools[match]["pv"] = True
-                    matched += 1
+                for table in tables:
+                    rows = table.find_all("tr")[1:]
+                    for row in rows:
+                        cells = [td.get_text(strip=True) for td in row.find_all("td")]
+                        if len(cells) < 3:
+                            continue
+                        school_name = cells[0].strip().title()
+                        # Look for phase-specific columns
+                        for i, cell in enumerate(cells[1:], 1):
+                            try:
+                                val = float(cell.replace(",", "").replace("-", "0").replace("%", ""))
+                                if 0 < val < 20:  # reasonable ratio range
+                                    match = find_school(school_name, schools)
+                                    if match and schools[match][f"{phase_key}_ratio"] == 0.0:
+                                        schools[match][f"{phase_key}_ratio"] = round(val, 2)
+                                        schools[match][phase_key] = ratio_label(val)
+                                        if phase_key == "p2b" and val > 2.5:
+                                            schools[match]["pv"] = True
+                                        matched += 1
+                                        break
+                            except ValueError:
+                                pass
+                if matched > 0:
+                    break
+                time.sleep(1)
+            except Exception as e:
+                print(f"  Phase {phase} from {base_url} failed: {e}")
 
-            print(f"  Phase {phase}: matched {matched} schools")
-            time.sleep(1)
-
-        except Exception as e:
-            print(f"  Phase {phase} scrape failed: {e}")
+        print(f"  Phase {phase}: matched {matched} schools")
 
 def find_school(name, schools):
     if name in schools:
@@ -308,8 +339,33 @@ def assign_vibes(schools):
 # 5. OUTPUT
 # ─────────────────────────────────────────────
 
+def geocode_schools(schools):
+    """Use OneMap API to get lat/lng from postal code"""
+    print("Geocoding schools via OneMap...")
+    geocoded = 0
+    for name, s in schools.items():
+        if s.get("lat") and s.get("lng"):
+            continue
+        postal = s.get("postal", "")
+        if not postal:
+            continue
+        try:
+            r = requests.get(
+                f"https://www.onemap.gov.sg/api/common/elastic/search?searchVal={postal}&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+                timeout=10
+            )
+            data = r.json()
+            if data.get("results"):
+                s["lat"] = float(data["results"][0]["LATITUDE"])
+                s["lng"] = float(data["results"][0]["LONGITUDE"])
+                geocoded += 1
+            time.sleep(0.3)
+        except Exception:
+            pass
+    print(f"  Geocoded {geocoded} schools")
+
 def write_output(schools):
-    valid = [s for s in schools.values() if s["lat"] and s["lng"]]
+    valid = [s for s in schools.values() if s.get("lat") and s.get("lng")]
     valid.sort(key=lambda s: s["name"])
     out_path = Path("src/schools.json")
     out_path.write_text(json.dumps(valid, indent=2, ensure_ascii=False))
@@ -335,10 +391,13 @@ if __name__ == "__main__":
     print("\nStep 4: Historical data")
     fetch_history(schools)
 
-    print("\nStep 5: Vibe scores")
+    print("\nStep 5: Geocoding")
+    geocode_schools(schools)
+
+    print("\nStep 6: Vibe scores")
     assign_vibes(schools)
 
-    print("\nStep 6: Writing output")
+    print("\nStep 7: Writing output")
     result = write_output(schools)
 
     # Summary
