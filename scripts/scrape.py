@@ -129,7 +129,9 @@ def fetch_ccas(schools):
         cca_map = {}
         for r in records:
             school_raw = (r.get("School_name") or r.get("school_name") or r.get("SCHOOL_NAME") or "").strip().upper()
-            cca = (r.get("cca_customized_name") or r.get("cca_generic_name") or r.get("CCA_GENERIC_NAME") or "").strip().title()
+            # cca_generic_name has actual CCA names e.g. "Chess", "Choir", "Football"
+            # cca_customized_name is often "Na" so we skip it
+            cca = (r.get("cca_grouping_desc") or "").strip().title()
             if school_raw and cca:
                 cca_map.setdefault(school_raw, set()).add(cca)
         matched = 0
