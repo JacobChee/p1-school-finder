@@ -61,10 +61,19 @@ def fetch_school_directory():
     print("Fetching school directory from data.gov.sg...")
     url = "https://data.gov.sg/api/action/datastore_search?resource_id=d_688b934f82c1059ed0a6993d2a829089&limit=100"
     records = fetch_all(url)
+    print(f"  Total records fetched: {len(records)}")
+    if records:
+        sample = records[0]
+        print(f"  Sample keys: {list(sample.keys())[:8]}")
+        print(f"  Sample mainlevel_code: {sample.get('mainlevel_code', 'NOT FOUND')}")
+        print(f"  Sample school_name: {sample.get('school_name', 'NOT FOUND')}")
     schools = {}
+    primary_count = 0
     for r in records:
-        if r.get("mainlevel_code", "").upper() != "PRIMARY":
+        level = r.get("mainlevel_code", "").upper().strip()
+        if level != "PRIMARY":
             continue
+        primary_count += 1
         name = r.get("school_name", "").strip().title()
         if not name:
             continue
@@ -121,7 +130,8 @@ def fetch_school_directory():
             "vibe": default_vibe("Easy"),
         }
 
-    print(f"  Found {len(schools)} primary schools")
+    print(f"  Primary records found: {primary_count}")
+    print(f"  Schools with valid data: {len(schools)}")
     return schools
 
 def dgp_to_zone(dgp):
