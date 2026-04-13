@@ -396,10 +396,17 @@
   /* Map fills most of screen */
   .map-panel {
     height: 55vh;
+    min-height: 55vh;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  .map-wrap { height: 100%; }
+  .map-wrap {
+    flex: 1;
+    height: 100%;
+    min-height: 300px;
+  }
 
   /* School list below map, scrollable */
   .school-list {
